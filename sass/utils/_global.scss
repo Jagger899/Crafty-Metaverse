@@ -2,19 +2,19 @@
 
 @font-face {
   font-family: 'HeliosExtC', sans-serif;
-  src: url("../../fonts/HeliosExtC\ Bold.otf");
+  src: url("../fonts/HeliosExtC-Bold.woff2");
 }
 @font-face {
   font-family: 'HeliosBlackC', sans-serif;
-  src: url("../../fonts/Helios\ Black.ttf");
+  src: url("../fonts/HeliosBlack.ttf");
 }
 @font-face {
   font-family: 'Gilroy', sans-serif;
-  src: url("../../fonts/Gilroy-Regular.woff2");
+  src: url("../fonts/Gilroy-Regular.woff2");
 }
 @font-face {
-  font-family: 'Gilroy', sans-serif;
-  src: url("../../fonts/Mandatory\ Plaything.otf");
+  font-family: 'Mandatory', sans-serif;
+  src: url("../fonts/MandatoryPlaything.otf");
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 }
 
 [class*=__container] {
-  max-width: 1630px;
+  max-width: 1660px;
   padding: 0 15px;
   margin: 0 auto;
 }

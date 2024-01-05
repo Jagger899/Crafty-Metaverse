@@ -27,4 +27,15 @@ menuOpen.addEventListener('click', function (event) {
     header.classList.remove('header_active');
     body.classList.remove('body_lock');
   }
-})
+});
+
+window.addEventListener('scroll', function () {
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 0) {
+    header.classList.add('header_fixed');
+  } else {
+    header.classList.remove('header_fixed');
+  }
+
+});

@@ -1,14 +1,15 @@
 .header {
-  background-color: #2d1f63;
+  // background-color: #2d1f63;
   padding: 46px 0 36px;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   right: 0;
+  z-index: 2;
 
     &_fixed {
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(92, 4, 95, 0.6);
     }
     
     &_active {
@@ -49,7 +50,8 @@
     position: relative;
 
     &:hover .header__item-line {
-      opacity: 1;
+      // opacity: 1;
+      transform: scale(1);
     }
     
   }
@@ -62,9 +64,10 @@
     position: absolute;
     left: 0;
     width: 100%;
-    opacity: 0;
+    transform: scale(0);
+    // opacity: 0;
     bottom: -8px;
-    transition: opacity 300ms linear;
+    transition: transform 300ms linear;
   }
 
   &__link {
@@ -112,11 +115,12 @@
     }
 
     &_rotate1 {
+      width: 27px;
       transform: rotate(45deg);
     }
 
     &_rotate2 {
-      width: 32px;
+      width: 27px;
       transform: rotate(-45deg) translate(5px, -6px);
     }
   }

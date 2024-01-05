@@ -1,0 +1,41 @@
+// font-family: 'Plus Jakarta Sans',sans-serif;
+
+@font-face {
+  font-family: 'HeliosExtC', sans-serif;
+  src: url("../../fonts/HeliosExtC\ Bold.otf");
+}
+@font-face {
+  font-family: 'HeliosBlackC', sans-serif;
+  src: url("../../fonts/Helios\ Black.ttf");
+}
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url("../../fonts/Gilroy-Regular.woff2");
+}
+@font-face {
+  font-family: 'Gilroy', sans-serif;
+  src: url("../../fonts/Mandatory\ Plaything.otf");
+}
+
+body {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  // overflow-x: hidden;
+}
+
+[class*=__container] {
+  max-width: 1630px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+.lock {
+  overflow: hidden;
+}

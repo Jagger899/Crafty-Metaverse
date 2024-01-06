@@ -19,13 +19,13 @@ menuOpen.addEventListener('click', function (event) {
     secondLine.classList.add('header__mobile-menu-line_remove');
     thirdLine.classList.add('header__mobile-menu-line_rotate2');
     header.classList.add('header_active');
-    body.classList.add('body_lock');
+    body.classList.add('lock');
   } else {
     firstLine.classList.remove('header__mobile-menu-line_rotate1');
     secondLine.classList.remove('header__mobile-menu-line_remove');
     thirdLine.classList.remove('header__mobile-menu-line_rotate2');
     header.classList.remove('header_active');
-    body.classList.remove('body_lock');
+    body.classList.remove('lock');
   }
 });
 

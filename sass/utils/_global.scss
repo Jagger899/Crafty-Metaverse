@@ -1,9 +1,10 @@
 // font-family: 'Plus Jakarta Sans',sans-serif;
 
 @font-face {
-  font-family: 'HeliosExtC', sans-serif;
+  font-family: 'HeliosExtC';
   src: url("../fonts/HeliosExtC-Bold.woff2");
 }
+
 @font-face {
   font-family: 'HeliosBlackC', sans-serif;
   src: url("../fonts/HeliosBlack.ttf");
@@ -23,11 +24,11 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   font-size: 20px;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 [class*=__container] {
-  max-width: 1660px;
+  max-width: 1640px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -38,4 +39,25 @@ a {
 
 .lock {
   overflow: hidden;
+}
+
+.button {
+  font-size:18px;
+  font-family: 'HeliosBlackC', sans-serif;
+  font-weight: 900;
+  display: block;
+  padding: 20px 0 24px;
+  background: linear-gradient(99deg, #7A42F4 0%, #4642F4 100%);
+  width: 209px;
+  text-align: center;
+  border-radius: 6px;
+  transition: background 300ms linear;
+
+  &:hover {
+    background: linear-gradient(270deg, #7A42F4 0%, #4642F4 100%);
+  }
+
+  &::before {
+
+  }
 }

@@ -1,8 +1,9 @@
 @import "./utils/variables";
 @import "./utils/reset";
+@import "./utils/media-breakpoints";
 @import "./utils/global";
 @import "./utils/mixins";
-@import "./utils/media-breakpoints";
+
 
 @import "./blocks/header.scss";
 @import "./blocks/promo.scss";

@@ -60,4 +60,15 @@ a {
   &::before {
 
   }
+
+  @include media-breakpoint-down(xxs) {
+    width: 188px;
+    font-size: 16px;
+    // padding: 14px 0;
+    padding: 0;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

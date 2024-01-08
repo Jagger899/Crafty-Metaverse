@@ -1,0 +1,128 @@
+.about-us {
+  padding: 245px 0 203px;
+  background-image: url("../images/about-us/about-us-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  &__container {
+    max-width: 1614px;
+  }
+  
+
+  &__content {
+    display: flex;
+    gap: 60px;
+    position:relative
+  }
+
+  &__inner {
+    overflow: hidden;
+    padding-top: 70px;
+  }
+
+  &__content-line {
+    border-radius: 62px;
+    background-color: #56FFEB;
+    box-shadow: 0px 4px 13px 0px rgba(191, 58, 255, 0.44);
+    height: 585px;
+    width: 6px;
+    // position: relative;
+    // z-index: 10;
+    // transform: rotate(90deg);
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 140%;
+    margin-bottom: 14px;
+    
+  }
+
+  &__title {
+    font-family: 'HeliosExtC';
+    font-size: 45px;
+    line-height: 109%;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+  }
+
+  &__slider {
+    // overflow: hidden;
+    max-width: 612px;
+    // overflow-y: visible;
+    
+  }
+
+  &__slider .swiper-scrollbar {
+    background-color: rgba(255,255,255,0.4);
+    background-color: red;
+    position: relative;
+    width: 406px;
+    margin-left: 12px;
+    margin-bottom: 18px;
+    height: 1px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      background-image: url("../images/about-us/slider-circle.svg");
+      width: 30px;
+      height: 30px;
+      top: -14px;
+      left: -18px;
+    }
+  }
+
+  &__slider .swiper-pagination {
+    font-family: HeliosExtC;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145%;
+    text-transform: uppercase;
+    display: flex;
+    max-width: 406px;
+    // margin-left: 30px;
+    position: static;
+    
+  }
+
+  &__slider .swiper-pagination-current {
+    text-align: left;
+    margin-right: 4px;
+  }
+  &__slider .swiper-pagination-total {
+    margin-left: auto;
+  }
+
+  &__slider .swiper-scrollbar-drag {
+    background-color: #7F5CFF;
+    // background-color: #51378b;
+    height: 6px;
+    top: -3px;
+
+  }
+
+  &__slide {
+    // max-width: 612px;
+  }
+
+  &__text {
+    max-width: 612px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 83px;
+  }
+
+  &__lines {
+    // display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+}

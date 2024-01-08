@@ -39,3 +39,47 @@ window.addEventListener('scroll', function () {
   }
 
 });
+
+const swiper = new Swiper('.about-us__slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  grabCursor: true,
+  
+  // formatFractionCurrent: function (number) {
+  //         return '0' + number;
+  //     },
+    // renderCustom: function (swiper, current, total) {
+    //     return current + '/' + (total - 1);
+    // },
+
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'fraction',
+  //   formatFractionCurrent: function (number) {
+  //       return '0' + number;
+  //   }
+  // },
+  //   pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'fraction',
+  //   renderCustom: function (current, total) {
+  //     return current + 'Chapter' + (total + 4);
+  //   }
+  // },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+    renderFraction: function (current, total) {
+      return '<span class="' + current + '"> </span>' +
+        ' Chapter' +
+        '<span class="' + total + '"></span>';
+    },
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

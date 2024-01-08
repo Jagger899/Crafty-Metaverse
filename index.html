@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -152,20 +153,68 @@
     </section>
     <section class="about-us">
       <div class="about-us__img-block">
-        <picture>
-          <source srcset="./images/about-us" type="image/webp" class="about-us__img">
+        <!-- <picture>
+          <source srcset="./images/about-us/about-us-bg.webp" type="image/webp" class="about-us__img">
           <img src="./images/about-us/about-us-bg.jpg" alt="hero" class="about-us__img">
-        </picture>
-        <div class="about-us__container">
-          <div class="about-us__header">
-            
+        </picture> -->
+      </div>
+      <div class="about-us__container">
+        <div class="about-us__content">
+          <div class="about-us__content-line"></div>
+          <div class="about-us__inner">
+            <h3 class="about-us__subtitle">Profile</h3>
+            <h2 class="about-us__title">About Us</h2>
+            <div class="swiper about-us__slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+      
+                <div class="swiper-slide about-us__slide">
+                  <p class="about-us__text">
+                    CYou are using the old write up. We are using this now.
+                    Crafty Metaverse is a multi-blockchain based virtual reality metaverse platform to develop the most
+                    immersive,
+                    imaginative, and addictive gaming experiences. We are providing our gaming community with the
+                    near-real-world experience
+                    while using their digital avatars. Our ecosystem will be a futuristic, decentralized, and persistent 3D
+                    virtual
+                    metaverse gaming platform especially for crypto enthusiasts, gamers, artists, and metaverse fans.
+                    .
+                  </p>
+                </div>
+                <div class="swiper-slide about-us__slide">
+                  <p class="about-us__text">
+                    CYou are using the old write up. We are using this now.
+                    Crafty Metaverse is a multi-blockchain based virtual reality metaverse platform to develop the most
+                    immersive,
+                    imaginative, and addictive gaming experiences. We are providing our gaming community with the
+                    near-real-world experience
+                    while using their digital avatars. Our ecosystem will be a futuristic, decentralized, and persistent 3D
+                    virtual
+                    metaverse gaming platform especially for crypto enthusiasts, gamers, artists, and metaverse fans.
+                    .
+                  </p>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <circle cx="15" cy="15" r="14" stroke="#7F5CFF" stroke-width="2" />
+                <circle cx="15" cy="15.207" r="8" stroke="#7F5CFF" stroke-width="4" />
+              </svg> -->
+              <div class="swiper-scrollbar"></div>
+              <div class="swiper-pagination about-us__swiper-pagination">
+                Chapter
+              </div>
+            </div>
           </div>
+          <img class="about-us__lines" src="./images/about-us/about-lines.svg" alt="">
         </div>
       </div>
     </section>
   </main>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

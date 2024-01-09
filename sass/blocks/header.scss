@@ -137,7 +137,7 @@
     display: none;
     @include media-breakpoint-down(sm) {
       display: block;
-      
+      overflow: auto;
       position: fixed;
       width: 100%;
       // height: calc(100vh - 100px);
@@ -150,12 +150,12 @@
       background-size: cover;
       background-position: center;
       // overflow: auto;
-      transform: translateX(120%);
+      transform: translateY(120%);
       transition: transform 500ms linear;
       z-index: 8;
 
       &_active {
-        transform: translateX(0);
+        transform: translateY(0);
       }
     }
   }

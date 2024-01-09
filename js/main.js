@@ -45,6 +45,8 @@ const swiper = new Swiper('.about-us__slider', {
   direction: 'horizontal',
   loop: false,
   grabCursor: true,
+  slidesPerView: 1,
+  
   
   // formatFractionCurrent: function (number) {
   //         return '0' + number;

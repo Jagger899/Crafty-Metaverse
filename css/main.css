@@ -1073,11 +1073,15 @@ a {
 .roadmap__point_fourth {
   transform: translate(-37px, -12px);
 }
-.roadmap__point-box_first {
-  align-self: self-end;
+@media (max-width: 375px) {
+  .roadmap__point-box_first {
+    align-self: self-end;
+  }
 }
-.roadmap__point-box_third {
-  align-self: self-end;
+@media (max-width: 375px) {
+  .roadmap__point-box_third {
+    align-self: self-end;
+  }
 }
 .roadmap__adv-list {
   display: flex;

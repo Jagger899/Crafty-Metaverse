@@ -72,3 +72,33 @@ a {
     justify-content: center;
   }
 }
+
+.section__subtitle {
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+.section__title {
+  font-family: HeliosExtC;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 109%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 90px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 28px;
+    margin-bottom: 39px;
+  }
+}
+

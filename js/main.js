@@ -10,6 +10,14 @@ const secondLine = document.getElementById('second-line');
 
 const thirdLine = document.getElementById('third-line');
 
+const dropButtonFirst = document.getElementById('roadmap__dropdown-button-first');
+const dropTextFirst = document.getElementById('roadmap__dropdown-text-first');
+
+const dropButtonSecond = document.getElementById('roadmap__dropdown-button-second');
+const dropTextSecond = document.getElementById('roadmap__dropdown-text-second');
+const roadmapArrowFirst = document.getElementById('roadmap-arrow-first');
+const roadmapArrowSecond = document.getElementById('roadmap-arrow-second');
+
 menuOpen.addEventListener('click', function (event) {
   event.preventDefault();
   mobileMenu.classList.toggle('header__mobile-menu_active');
@@ -56,32 +64,69 @@ const swiper = new Swiper('.about-us__slider', {
     // },
 
   // If we need pagination
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   type: 'fraction',
-  //   formatFractionCurrent: function (number) {
-  //       return '0' + number;
-  //   }
-  // },
-  //   pagination: {
-  //   el: '.swiper-pagination',
-  //   type: 'fraction',
-  //   renderCustom: function (current, total) {
-  //     return current + 'Chapter' + (total + 4);
-  //   }
-  // },
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
     renderFraction: function (current, total) {
+      // return current + '' + 'Chapter' + total;
       return '<span class="' + current + '"> </span>' +
         ' Chapter' +
-        '<span class="' + total + '"></span>';
-    },
+        '<span class="' + total + '"></span>'
+    }
   },
-
+  //   pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'fraction',
+  //   renderCustom: function (current, total) {
+  //     return current + 'Chapter' + (total);
+  //   }
+  // },
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
 });
+
+dropButtonFirst.addEventListener('click', function () {
+  dropTextFirst.classList.toggle('roadmap__dropdown-text_visible');
+  let currentElement = dropTextFirst.nextElementSibling;
+  roadmapArrowFirst.classList.toggle('roadmap__dropdown-arrow_rotate')
+
+
+  if (!dropButtonFirst.classList.contains('roadmap__dropdown-text_visible')) {
+    dropButtonFirst.classList.add('roadmap__dropdown-text_visible');
+    // roadmapArrowFirst.classList.remove('roadmap__dropdown-arrow_rotate');
+  } else {
+    dropButtonFirst.classList.remove('roadmap__dropdown-text_visible');
+    // roadmapArrowFirst.classList.add('roadmap__dropdown-arrow_rotate');
+  }
+
+  // if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+  //     currentElement.classList.add('roadmap__dropdown-text_visible');
+  //     currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
+  //   } else {
+  //     currentElement.classList.remove('roadmap__dropdown-text_visible');
+  //     currentElement.style.maxHeight = null;
+  //   }
+})
+
+dropButtonSecond.addEventListener('click', function () {
+  dropTextSecond.classList.toggle('roadmap__dropdown-text_visible');
+  let currentElement = dropTextFirst.nextElementSibling;
+  roadmapArrowSecond.classList.toggle('roadmap__dropdown-arrow_rotate');
+
+  if (!dropButtonSecond.classList.contains('roadmap__dropdown-text_visible')) {
+    dropButtonSecond.classList.add('roadmap__dropdown-text_visible');
+
+  } else {
+    dropButtonSecond.classList.remove('roadmap__dropdown-text_visible');
+  }
+
+  // if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+  //     currentElement.classList.add('roadmap__dropdown-text_visible');
+  //     currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
+  //   } else {
+  //     currentElement.classList.remove('roadmap__dropdown-text_visible');
+  //     currentElement.style.maxHeight = null;
+  //   }
+})

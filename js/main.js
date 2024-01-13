@@ -1,9 +1,7 @@
 const body = document.querySelector('.body');
 const header = document.getElementById('header');
 const mobileMenu = document.getElementById('header__mobile-menu');
-console.log(mobileMenu);
 const menuOpen = document.getElementById('mobile-menu-open');
-console.log(menuOpen);
 const firstLine = document.getElementById('first-line');
 
 const secondLine = document.getElementById('second-line');
@@ -15,6 +13,7 @@ const dropTextFirst = document.getElementById('roadmap__dropdown-text-first');
 
 const dropButtonSecond = document.getElementById('roadmap__dropdown-button-second');
 const dropTextSecond = document.getElementById('roadmap__dropdown-text-second');
+
 const roadmapArrowFirst = document.getElementById('roadmap-arrow-first');
 const roadmapArrowSecond = document.getElementById('roadmap-arrow-second');
 
@@ -38,14 +37,12 @@ menuOpen.addEventListener('click', function (event) {
 });
 
 window.addEventListener('scroll', function () {
-  const scrollPosition = window.scrollY;
 
-  if (scrollPosition > 0) {
+  if (this.window.scrollY > 0) {
     header.classList.add('header_fixed');
   } else {
     header.classList.remove('header_fixed');
   }
-
 });
 
 const swiper = new Swiper('.about-us__slider', {
@@ -54,33 +51,17 @@ const swiper = new Swiper('.about-us__slider', {
   loop: false,
   grabCursor: true,
   slidesPerView: 1,
-  
-  
-  // formatFractionCurrent: function (number) {
-  //         return '0' + number;
-  //     },
-    // renderCustom: function (swiper, current, total) {
-    //     return current + '/' + (total - 1);
-    // },
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
     renderFraction: function (current, total) {
-      // return current + '' + 'Chapter' + total;
       return '<span class="' + current + '"> </span>' +
         ' Chapter' +
         '<span class="' + total + '"></span>'
     }
   },
-  //   pagination: {
-  //   el: '.swiper-pagination',
-  //   type: 'fraction',
-  //   renderCustom: function (current, total) {
-  //     return current + 'Chapter' + (total);
-  //   }
-  // },
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
@@ -112,21 +93,23 @@ dropButtonFirst.addEventListener('click', function () {
 
 dropButtonSecond.addEventListener('click', function () {
   dropTextSecond.classList.toggle('roadmap__dropdown-text_visible');
-  let currentElement = dropTextFirst.nextElementSibling;
+  let currentElement = dropTextSecond.nextElementSibling;
   roadmapArrowSecond.classList.toggle('roadmap__dropdown-arrow_rotate');
 
-  if (!dropButtonSecond.classList.contains('roadmap__dropdown-text_visible')) {
-    dropButtonSecond.classList.add('roadmap__dropdown-text_visible');
+  // if (!dropButtonSecond.classList.contains('roadmap__dropdown-text_visible')) {
+  //   dropButtonSecond.classList.add('roadmap__dropdown-text_visible');
 
+  // } else {
+  //   dropButtonSecond.classList.remove('roadmap__dropdown-text_visible');
+  // }
+
+if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+    currentElement.classList.add('roadmap__dropdown-text_visible');
+  // currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
+  currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
+  
   } else {
-    dropButtonSecond.classList.remove('roadmap__dropdown-text_visible');
+    currentElement.classList.remove('roadmap__dropdown-text_visible');
+    currentElement.style.maxHeight = null;
   }
-
-  // if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-  //     currentElement.classList.add('roadmap__dropdown-text_visible');
-  //     currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
-  //   } else {
-  //     currentElement.classList.remove('roadmap__dropdown-text_visible');
-  //     currentElement.style.maxHeight = null;
-  //   }
 })

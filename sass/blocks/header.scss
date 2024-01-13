@@ -11,12 +11,7 @@
     &_fixed {
       background-color: rgba(92, 4, 95, 0.6);
     }
-    
-    &_active {
-      // background-color: #000;
-      // background: linear-gradient(0deg, rgba(0, 0, 0, 0.015) 0%, rgba(0, 0, 0, 0.738) 40%)
-    }
-  
+
   @include media-breakpoint-down(xxs) {
     padding-top: 42px;
   }
@@ -25,7 +20,6 @@
     position: relative;
     z-index: 10;
   }
-   
 
   &__container {
     display: flex;
@@ -49,14 +43,12 @@
     @include media-breakpoint-down(sm) {
       display: none;
     }
-
   }
 
   &__item {
     position: relative;
 
     &:hover .header__item-line {
-      // opacity: 1;
       transform: scale(1);
     }
     
@@ -71,7 +63,6 @@
     left: 0;
     width: 100%;
     transform: scale(0);
-    // opacity: 0;
     bottom: -8px;
     transition: transform 300ms linear;
   }
@@ -90,6 +81,7 @@
 
   &__mobile-menu-open {
     display: none;
+
     @include media-breakpoint-down(sm) {
       display: flex;
       position: relative;
@@ -135,12 +127,12 @@
 
   &__mobile-menu {
     display: none;
+
     @include media-breakpoint-down(sm) {
       display: block;
       overflow: auto;
       position: fixed;
       width: 100%;
-      // height: calc(100vh - 100px);
       height: 100vh;
       left: 0;
       background-color: #000;
@@ -149,7 +141,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      // overflow: auto;
       transform: translateY(120%);
       transition: transform 500ms linear;
       z-index: 8;
@@ -166,16 +157,6 @@
     height: 100%;
     padding: 143px 20px 100px;
   }
-
-  // &__mobile-menu-overlay {
-  //   background-color: rgba(0, 0, 0, 0.6);
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   z-index: -1;
-  // }
 
   &__mobile-menu-list {
     display: flex;
@@ -194,7 +175,6 @@
     }
 
     &:hover .header__mobile-menu-decor {
-      // opacity: 1;
       transform: scale(1);
     }
   }
@@ -208,18 +188,7 @@
     left: 0;
     width: 100%;
     transform: scale(0);
-    // opacity: 0;
     bottom: -8px;
     transition: transform 300ms linear;
   }
-
-  // &__mobile-img {
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   top: 0;
-  //   left: 0;
-  //   object-fit: cover;
-  //   z-index: -2;
-  // }
 }

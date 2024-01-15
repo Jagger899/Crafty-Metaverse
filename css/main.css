@@ -1865,7 +1865,13 @@ a {
 .brands {
   padding: 85px 0 135px;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+@media (max-width: 576px) {
+  .brands {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
 }
 .brands__bg {
   position: absolute;
@@ -1894,6 +1900,12 @@ a {
     margin-left: 0;
   }
 }
+@media (max-width: 375px) {
+  .brands__subtitle {
+    margin-left: 17px;
+    margin-bottom: 16px;
+  }
+}
 .brands__title {
   margin-bottom: 95px;
   margin-left: 17px;
@@ -1903,11 +1915,16 @@ a {
     margin-left: 0;
   }
 }
+@media (max-width: 375px) {
+  .brands__title {
+    margin-left: 17px;
+    margin-bottom: 75px;
+  }
+}
 .brands__cards-box {
   display: flex;
   justify-content: space-between;
   padding: 0 126px 0 155px;
-  position: relative;
 }
 @media (max-width: 1650px) {
   .brands__cards-box {
@@ -1917,7 +1934,17 @@ a {
 @media (max-width: 1420px) {
   .brands__cards-box {
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
   }
+}
+@media (max-width: 576px) {
+  .brands__cards-box {
+    gap: 46px;
+  }
+}
+.brands__card-photo-box {
+  position: relative;
 }
 .brands__card {
   display: flex;
@@ -1925,11 +1952,32 @@ a {
   align-items: center;
   max-width: 385px;
 }
+@media (max-width: 375px) {
+  .brands__card:nth-child(2) {
+    margin-left: 17px;
+    margin-bottom: 3px;
+  }
+}
 .brands__card:nth-child(3) {
   margin-left: 10px;
 }
+@media (max-width: 375px) {
+  .brands__card:nth-child(3) {
+    margin-left: 17px;
+  }
+}
 .brands__card:first-child .brands__card-img {
   margin-bottom: 59px;
+}
+@media (max-width: 375px) {
+  .brands__card:first-child .brands__card-img {
+    margin-bottom: 51px;
+  }
+}
+@media (max-width: 375px) {
+  .brands__card:nth-child(2) .brands__card-title {
+    margin-left: 6px;
+  }
 }
 .brands__card:nth-child(3) .brands__card-img {
   margin-bottom: 54px;
@@ -1938,9 +1986,19 @@ a {
 .brands__card:nth-child(3) .brands__card-title {
   margin-bottom: 30px;
 }
+@media (max-width: 375px) {
+  .brands__card:nth-child(3) .brands__card-title {
+    margin-bottom: 17px;
+  }
+}
 @media (max-width: 576px) {
   .brands__card {
     max-width: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .brands__card {
+    margin-left: 12px;
   }
 }
 .brands__card-img {
@@ -1965,6 +2023,12 @@ a {
   background: #F00AFE;
   box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.5);
 }
+@media (max-width: 576px) {
+  .brands__card-line {
+    width: 350px;
+    margin-bottom: 31px;
+  }
+}
 .brands__card-line-shadow {
   position: absolute;
   top: 0;
@@ -1985,6 +2049,11 @@ a {
   margin-bottom: 7px;
   line-height: 140%;
 }
+@media (max-width: 576px) {
+  .brands__card-title {
+    margin-bottom: 15px;
+  }
+}
 .brands__card-text {
   font-size: 18px;
   font-weight: 300;
@@ -1993,10 +2062,15 @@ a {
   line-height: 160%;
   letter-spacing: 0.18px;
 }
+@media (max-width: 576px) {
+  .brands__card-text {
+    max-width: 350px;
+  }
+}
 .brands__card-decor-first {
   position: absolute;
-  top: -35%;
-  left: 0;
+  top: -60%;
+  left: -60%;
   opacity: 0.4;
   z-index: -6;
 }
@@ -2006,20 +2080,20 @@ a {
   z-index: -5;
   opacity: 0.4;
   top: -53%;
-  left: 26%;
+  left: -100%;
 }
 .brands__card-decor-third {
   position: absolute;
   z-index: -6;
-  top: -24%;
-  left: 26%;
+  top: -64%;
+  left: -60%;
   opacity: 0.4;
 }
 .brands__card-decor-fourth {
   position: absolute;
   z-index: -6;
-  right: 0;
-  top: -41%;
+  right: -47%;
+  top: -63%;
   opacity: 0.4;
 }
 .brands__lines-bg {
@@ -2028,7 +2102,10 @@ a {
   height: 100%;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: -7;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

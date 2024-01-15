@@ -1,0 +1,114 @@
+.brands {
+  padding: 112px 0 135px;
+  position: relative;
+  
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    &_black {
+      background-color: #090812;
+      z-index: -10;
+    }
+
+    &_blue {
+      background: linear-gradient(180deg, rgba(36, 10, 92, 0.63) 8.97%, rgba(36, 11, 88, 0.30) 100%);
+      backdrop-filter: blur(150px);
+      z-index: -9;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    margin-bottom: 90px;
+  }
+
+  &__cards-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 385px;
+
+    &:nth-child(3) .brands__card-img {
+      margin-bottom: 56px;
+    }
+ 
+    @include media-breakpoint-down(xs) {
+      max-width: 350px;
+    }
+
+
+  }
+
+  &__card-img {
+    margin-bottom: 64px;
+
+  }
+
+  &__card-line {
+    width: 385px;
+    height: 6px;
+    border-radius: 48px;
+    margin-bottom: 46px;
+    position: relative;
+
+    &_first {
+      background: #06D6DF;
+      box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.50);
+    }
+
+    &_second {
+      background: #7B71EE;
+      box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.50);
+    }
+
+    &_third {
+      background: #F00AFE;
+      box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.50);
+    }
+  }
+
+  &__card-line-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 202px;
+    left: 0;
+    border-radius: 1px;
+    transform: rotate(180deg);
+    z-index: -8;
+    background: linear-gradient(359deg, rgba(56, 219, 255, 0.14) 0.58%, rgba(56, 219, 255, 0.00) 42.57%);
+   
+  }
+
+  &__card-title {
+    font-family: 'HeliosExtC';
+    text-align: center;
+    max-width: 308px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    line-height: 140%;
+  }
+
+  &__card-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+  }
+}

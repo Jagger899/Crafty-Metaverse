@@ -68,18 +68,22 @@ const swiper = new Swiper('.about-us__slider', {
   },
 });
 
+
 dropButtonFirst.addEventListener('click', function () {
-  dropTextFirst.classList.toggle('roadmap__dropdown-text_visible');
-  let currentElement = dropTextFirst.nextElementSibling;
+  // dropTextFirst.classList.toggle('roadmap__dropdown-text_visible');
+  let currentElement = dropButtonFirst.nextElementSibling;
   roadmapArrowFirst.classList.toggle('roadmap__dropdown-arrow_rotate')
+  console.log(window.innerWidth)
 
-
-  if (!dropButtonFirst.classList.contains('roadmap__dropdown-text_visible')) {
-    dropButtonFirst.classList.add('roadmap__dropdown-text_visible');
-    // roadmapArrowFirst.classList.remove('roadmap__dropdown-arrow_rotate');
+  if (window.innerWidth >= 1313 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+    currentElement.classList.add('roadmap__dropdown-text_visible');
+    // currentElement.style.maxHeight = null;
+  } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+      currentElement.classList.add('roadmap__dropdown-text_visible');
+      currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
   } else {
-    dropButtonFirst.classList.remove('roadmap__dropdown-text_visible');
-    // roadmapArrowFirst.classList.add('roadmap__dropdown-arrow_rotate');
+    currentElement.classList.remove('roadmap__dropdown-text_visible');
+    currentElement.style.maxHeight = null;
   }
 
   // if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
@@ -92,24 +96,42 @@ dropButtonFirst.addEventListener('click', function () {
 })
 
 dropButtonSecond.addEventListener('click', function () {
-  dropTextSecond.classList.toggle('roadmap__dropdown-text_visible');
-  let currentElement = dropTextSecond.nextElementSibling;
+  let currentElement = dropButtonSecond.nextElementSibling;
   roadmapArrowSecond.classList.toggle('roadmap__dropdown-arrow_rotate');
 
-  // if (!dropButtonSecond.classList.contains('roadmap__dropdown-text_visible')) {
-  //   dropButtonSecond.classList.add('roadmap__dropdown-text_visible');
+//   if (window.innerWidth >= 1300 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+//   currentElement.classList.add('roadmap__dropdown-text_visible');
+//     // currentElement.style.maxHeight = null;
+//   } else {
+//     currentElement.classList.remove('roadmap__dropdown-text_visible');
+//   }
 
-  // } else {
-  //   dropButtonSecond.classList.remove('roadmap__dropdown-text_visible');
-  // }
+//   if (!dropButtonSecond.classList.contains('roadmap__dropdown-text_visible')) {
+//     dropButtonSecond.classList.add('roadmap__dropdown-text_visible');
 
-if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-    currentElement.classList.add('roadmap__dropdown-text_visible');
-  // currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
-  currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
+//   } else {
+//     dropButtonSecond.classList.remove('roadmap__dropdown-text_visible');
+//   }
+
+//   console.log(currentElement);
+
+// if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+//     currentElement.classList.add('roadmap__dropdown-text_visible');
+//     currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
   
+//   } else {
+//     currentElement.classList.remove('roadmap__dropdown-text_visible');
+//     currentElement.style.maxHeight = null;
+  //   }
+  if (window.innerWidth >= 1295 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+    currentElement.classList.add('roadmap__dropdown-text_visible');
+    // currentElement.style.maxHeight = null;
+  } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+      currentElement.classList.add('roadmap__dropdown-text_visible');
+      currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
   } else {
     currentElement.classList.remove('roadmap__dropdown-text_visible');
     currentElement.style.maxHeight = null;
   }
 })
+

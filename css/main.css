@@ -276,7 +276,7 @@ a {
   z-index: 10;
 }
 .header_fixed {
-  background-color: rgba(92, 4, 95, 0.6);
+  background-color: rgba(49, 1, 51, 0.8);
 }
 @media (max-width: 375px) {
   .header {
@@ -958,7 +958,7 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: -10;
+  z-index: -11;
 }
 .roadmap__container {
   max-width: 1544px;
@@ -1825,7 +1825,7 @@ a {
   position: absolute;
   top: 0;
   left: 27%;
-  z-index: -1;
+  z-index: -10;
 }
 @media (max-width: 1650px) {
   .roadmap__stars-img {
@@ -1840,7 +1840,9 @@ a {
 }
 @media (max-width: 1024px) {
   .roadmap__stars-img {
-    left: 10%;
+    left: -25%;
+    top: 5%;
+    transform: scaleX(-1);
   }
 }
 @media (max-width: 576px) {
@@ -1858,6 +1860,101 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.brands {
+  padding: 112px 0 135px;
+  position: relative;
+}
+.brands__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.brands__bg_black {
+  background-color: #090812;
+  z-index: -10;
+}
+.brands__bg_blue {
+  background: linear-gradient(180deg, rgba(36, 10, 92, 0.63) 8.97%, rgba(36, 11, 88, 0.3) 100%);
+  backdrop-filter: blur(150px);
+  z-index: -9;
+}
+.brands__subtitle {
+  margin-bottom: 24px;
+}
+.brands__title {
+  margin-bottom: 90px;
+}
+.brands__cards-box {
+  display: flex;
+  justify-content: space-between;
+}
+.brands__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 385px;
+}
+.brands__card:nth-child(3) .brands__card-img {
+  margin-bottom: 56px;
+}
+@media (max-width: 576px) {
+  .brands__card {
+    max-width: 350px;
+  }
+}
+.brands__card-img {
+  margin-bottom: 64px;
+}
+.brands__card-line {
+  width: 385px;
+  height: 6px;
+  border-radius: 48px;
+  margin-bottom: 46px;
+  position: relative;
+}
+.brands__card-line_first {
+  background: #06D6DF;
+  box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.5);
+}
+.brands__card-line_second {
+  background: #7B71EE;
+  box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.5);
+}
+.brands__card-line_third {
+  background: #F00AFE;
+  box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.5);
+}
+.brands__card-line-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 202px;
+  left: 0;
+  border-radius: 1px;
+  transform: rotate(180deg);
+  z-index: -8;
+  background: linear-gradient(359deg, rgba(56, 219, 255, 0.14) 0.58%, rgba(56, 219, 255, 0) 42.57%);
+}
+.brands__card-title {
+  font-family: "HeliosExtC";
+  text-align: center;
+  max-width: 308px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  line-height: 140%;
+}
+.brands__card-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

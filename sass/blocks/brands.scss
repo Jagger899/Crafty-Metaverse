@@ -1,6 +1,7 @@
 .brands {
-  padding: 112px 0 135px;
+  padding: 85px 0 135px;
   position: relative;
+  overflow-x: hidden;
   
 
   &__bg {
@@ -25,16 +26,36 @@
   }
 
   &__subtitle {
-    margin-bottom: 24px;
+    margin-bottom: 21px;
+    margin-left:48px;
+
+    @include media-breakpoint-down(l) {
+        margin-left: 0;
+      }
   }
 
   &__title {
-    margin-bottom: 90px;
+    margin-bottom: 95px;
+    margin-left: 17px;
+
+    @include media-breakpoint-down(l) {
+      margin-left: 0;
+    }
   }
 
   &__cards-box {
     display: flex;
     justify-content: space-between;
+    padding: 0 126px 0 155px;
+    position: relative;
+
+    @include media-breakpoint-down(l) {
+      padding: 0;
+    }
+
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+    }
   }
 
   &__card {
@@ -42,9 +63,24 @@
     flex-direction: column;
     align-items: center;
     max-width: 385px;
+    // position: relative;
+
+    &:nth-child(3) {
+      margin-left: 10px;
+    }
+
+    &:first-child .brands__card-img {
+      margin-bottom: 59px;
+    }
+
 
     &:nth-child(3) .brands__card-img {
-      margin-bottom: 56px;
+      margin-bottom: 54px;
+      margin-right: 20px;
+    }
+
+    &:nth-child(3) .brands__card-title {
+      margin-bottom: 30px;
     }
  
     @include media-breakpoint-down(xs) {
@@ -110,5 +146,58 @@
     font-weight: 300;
     color: rgba(255,255,255,0.6);
     text-align: center;
+    line-height: 160%;
+    letter-spacing: 0.18px;
+  }
+
+  &__card-decor-first {
+    // width: 711.499px;
+    // height: 502.033px;
+    // background-color: red;
+    position: absolute;
+    top: -35%;
+    left: 0;
+    // background: linear-gradient(114deg, #4462FF 23.53%, #56FFEB 64.93%);
+    // filter: blur(85px);
+    opacity: 0.4;
+    z-index: -6;
+  }
+
+  &__card-decor-second {
+    position: absolute;
+    top: 0;
+    z-index: -5;
+    opacity: 0.4;
+    top: -53%;
+    left: 26%;
+  }
+
+  &__card-decor-third {
+    position: absolute;
+    z-index: -6;
+    top:-24%;
+    left:26%;
+    opacity: 0.4;
+  }
+
+  &__card-decor-fourth {
+    position: absolute;
+    z-index: -6;
+    right: 0;
+    top: -41%;
+    opacity: 0.4;
+  }
+
+
+
+
+
+  &__lines-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -7;
   }
 }

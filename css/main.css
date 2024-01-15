@@ -1863,8 +1863,9 @@ a {
 }
 
 .brands {
-  padding: 112px 0 135px;
+  padding: 85px 0 135px;
   position: relative;
+  overflow-x: hidden;
 }
 .brands__bg {
   position: absolute;
@@ -1885,14 +1886,38 @@ a {
   z-index: -9;
 }
 .brands__subtitle {
-  margin-bottom: 24px;
+  margin-bottom: 21px;
+  margin-left: 48px;
+}
+@media (max-width: 1650px) {
+  .brands__subtitle {
+    margin-left: 0;
+  }
 }
 .brands__title {
-  margin-bottom: 90px;
+  margin-bottom: 95px;
+  margin-left: 17px;
+}
+@media (max-width: 1650px) {
+  .brands__title {
+    margin-left: 0;
+  }
 }
 .brands__cards-box {
   display: flex;
   justify-content: space-between;
+  padding: 0 126px 0 155px;
+  position: relative;
+}
+@media (max-width: 1650px) {
+  .brands__cards-box {
+    padding: 0;
+  }
+}
+@media (max-width: 1420px) {
+  .brands__cards-box {
+    flex-wrap: wrap;
+  }
 }
 .brands__card {
   display: flex;
@@ -1900,8 +1925,18 @@ a {
   align-items: center;
   max-width: 385px;
 }
+.brands__card:nth-child(3) {
+  margin-left: 10px;
+}
+.brands__card:first-child .brands__card-img {
+  margin-bottom: 59px;
+}
 .brands__card:nth-child(3) .brands__card-img {
-  margin-bottom: 56px;
+  margin-bottom: 54px;
+  margin-right: 20px;
+}
+.brands__card:nth-child(3) .brands__card-title {
+  margin-bottom: 30px;
 }
 @media (max-width: 576px) {
   .brands__card {
@@ -1955,6 +1990,45 @@ a {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
+  line-height: 160%;
+  letter-spacing: 0.18px;
+}
+.brands__card-decor-first {
+  position: absolute;
+  top: -35%;
+  left: 0;
+  opacity: 0.4;
+  z-index: -6;
+}
+.brands__card-decor-second {
+  position: absolute;
+  top: 0;
+  z-index: -5;
+  opacity: 0.4;
+  top: -53%;
+  left: 26%;
+}
+.brands__card-decor-third {
+  position: absolute;
+  z-index: -6;
+  top: -24%;
+  left: 26%;
+  opacity: 0.4;
+}
+.brands__card-decor-fourth {
+  position: absolute;
+  z-index: -6;
+  right: 0;
+  top: -41%;
+  opacity: 0.4;
+}
+.brands__lines-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -7;
 }
 
 /*# sourceMappingURL=main.css.map */

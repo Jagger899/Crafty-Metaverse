@@ -1,16 +1,15 @@
 const body = document.querySelector('.body');
 const header = document.getElementById('header');
+
 const mobileMenu = document.getElementById('header__mobile-menu');
 const menuOpen = document.getElementById('mobile-menu-open');
+
 const firstLine = document.getElementById('first-line');
-
 const secondLine = document.getElementById('second-line');
-
 const thirdLine = document.getElementById('third-line');
 
 const dropButtonFirst = document.getElementById('roadmap__dropdown-button-first');
 const dropTextFirst = document.getElementById('roadmap__dropdown-text-first');
-
 const dropButtonSecond = document.getElementById('roadmap__dropdown-button-second');
 const dropTextSecond = document.getElementById('roadmap__dropdown-text-second');
 
@@ -70,14 +69,11 @@ const swiper = new Swiper('.about-us__slider', {
 
 
 dropButtonFirst.addEventListener('click', function () {
-  // dropTextFirst.classList.toggle('roadmap__dropdown-text_visible');
   let currentElement = dropButtonFirst.nextElementSibling;
   roadmapArrowFirst.classList.toggle('roadmap__dropdown-arrow_rotate')
-  console.log(window.innerWidth)
 
   if (window.innerWidth >= 1313 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
     currentElement.classList.add('roadmap__dropdown-text_visible');
-    // currentElement.style.maxHeight = null;
   } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
       currentElement.classList.add('roadmap__dropdown-text_visible');
       currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
@@ -86,46 +82,14 @@ dropButtonFirst.addEventListener('click', function () {
     currentElement.style.maxHeight = null;
   }
 
-  // if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-  //     currentElement.classList.add('roadmap__dropdown-text_visible');
-  //     currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
-  //   } else {
-  //     currentElement.classList.remove('roadmap__dropdown-text_visible');
-  //     currentElement.style.maxHeight = null;
-  //   }
 })
 
 dropButtonSecond.addEventListener('click', function () {
   let currentElement = dropButtonSecond.nextElementSibling;
   roadmapArrowSecond.classList.toggle('roadmap__dropdown-arrow_rotate');
 
-//   if (window.innerWidth >= 1300 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-//   currentElement.classList.add('roadmap__dropdown-text_visible');
-//     // currentElement.style.maxHeight = null;
-//   } else {
-//     currentElement.classList.remove('roadmap__dropdown-text_visible');
-//   }
-
-//   if (!dropButtonSecond.classList.contains('roadmap__dropdown-text_visible')) {
-//     dropButtonSecond.classList.add('roadmap__dropdown-text_visible');
-
-//   } else {
-//     dropButtonSecond.classList.remove('roadmap__dropdown-text_visible');
-//   }
-
-//   console.log(currentElement);
-
-// if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-//     currentElement.classList.add('roadmap__dropdown-text_visible');
-//     currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
-  
-//   } else {
-//     currentElement.classList.remove('roadmap__dropdown-text_visible');
-//     currentElement.style.maxHeight = null;
-  //   }
   if (window.innerWidth >= 1295 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
     currentElement.classList.add('roadmap__dropdown-text_visible');
-    // currentElement.style.maxHeight = null;
   } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
       currentElement.classList.add('roadmap__dropdown-text_visible');
       currentElement.style.maxHeight = currentElement.scrollHeight + 'px';

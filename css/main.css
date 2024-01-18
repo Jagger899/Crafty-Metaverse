@@ -2868,16 +2868,47 @@ main {
   z-index: -4;
   object-fit: cover;
 }
+.game__container {
+  position: relative;
+}
+.game__decor-first {
+  width: 859.184px;
+  height: 372.671px;
+  position: absolute;
+  background-color: red;
+  opacity: 0.4;
+  background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  top: -18%;
+  left: 0;
+  border-radius: 859.184px;
+  transform: rotate(-20deg);
+  filter: blur(218px);
+  z-index: -3;
+}
+.game__decor-second {
+  width: 859.184px;
+  height: 529.738px;
+  border-radius: 859.184px;
+  opacity: 0.4;
+  background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  position: absolute;
+  bottom: -1%;
+  right: -9%;
+  transform: rotate(17deg);
+  filter: blur(218px);
+}
 .game__inner {
   display: flex;
   justify-content: space-between;
   padding-left: 50px;
 }
 .game__hero-first {
-  margin-right: 50px;
+  margin-right: 103px;
+  margin-top: 44px;
+  margin-left: -18px;
 }
 .game__content {
-  max-width: 644px;
+  width: 644px;
   position: relative;
   padding-top: 68px;
 }
@@ -2891,6 +2922,15 @@ main {
   background: #56FFEB;
   box-shadow: 0px 4px 13px 0px rgba(191, 58, 255, 0.44);
 }
+.game__content::after {
+  content: "";
+  position: absolute;
+  right: -24px;
+  top: 75px;
+  background-image: url("../images/game/plain.svg");
+  width: 46px;
+  height: 46px;
+}
 .game__content-title {
   font-family: HeliosExtC;
   font-size: 45px;
@@ -2898,13 +2938,15 @@ main {
   line-height: 109%;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 27px;
+  margin-bottom: 32px;
 }
 .game__content-text-box {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  margin-bottom: 50px;
+  gap: 34px;
+  margin-bottom: 43px;
+  margin: 0 auto 43px;
+  max-width: 585px;
 }
 .game__content-text {
   font-size: 20px;
@@ -2915,6 +2957,7 @@ main {
 }
 .game__content-button {
   margin: 0 auto;
+  width: 176px;
 }
 .game__content-lines {
   position: absolute;
@@ -2927,6 +2970,12 @@ main {
 }
 .game__hero-second {
   position: relative;
+  margin-left: -10px;
+}
+.game__hero-circle {
+  position: absolute;
+  bottom: -46px;
+  right: -59px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -24,7 +24,35 @@
   }
 
   &__container {
-   
+   position: relative;
+  }
+
+  &__decor-first {
+    width: 859.184px;
+    height: 372.671px;
+    position: absolute;
+    background-color: red;
+    opacity: 0.4;
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    top: -18%;
+    left: 0;
+    border-radius: 859.184px;
+    transform: rotate(-20deg);
+    filter: blur(218px);
+    z-index: -3;
+  }
+
+  &__decor-second {
+    width: 859.184px;
+    height: 529.738px;
+    border-radius: 859.184px;
+    opacity: 0.4;
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    position: absolute;
+    bottom: -1%;
+    right: -9%;
+    transform: rotate(17deg);
+    filter: blur(218px);
   }
 
   &__inner {
@@ -34,20 +62,16 @@
   }
 
   &__hero-first {
-    margin-right: 50px;
+    margin-right: 103px;
+    margin-top: 44px;
+    margin-left:-18px;
+    
   }
 
   &__content {
-    max-width: 644px;
+    width: 644px;
     position: relative;
     padding-top: 68px;
-
-
-
-
-
-
-
 
     &::before {
       content: '';
@@ -59,6 +83,16 @@
       background: #56FFEB;
       box-shadow: 0px 4px 13px 0px rgba(191, 58, 255, 0.44);
     }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -24px;
+      top: 75px;
+      background-image: url("../images/game/plain.svg");
+      width: 46px;
+      height: 46px;
+    }
   }
 
   &__content-title {
@@ -68,14 +102,16 @@
     line-height: 109%;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 27px;
+    margin-bottom: 32px;
   }
 
   &__content-text-box {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-bottom: 50px;
+    gap: 34px;
+    margin-bottom: 43px;
+    margin: 0 auto 43px;
+    max-width: 585px;
   }
 
   &__content-text {
@@ -84,10 +120,12 @@
     line-height: 160%;
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
+    
   }
 
   &__content-button {
     margin: 0 auto;
+    width: 176px;
   }
 
   &__content-lines {
@@ -104,5 +142,12 @@
     // display: flex;
     // align-items: flex-end;
     position: relative;
+    margin-left: -10px;
+  }
+
+  &__hero-circle {
+    position: absolute;
+    bottom: -46px;
+    right: -59px;
   }
 }

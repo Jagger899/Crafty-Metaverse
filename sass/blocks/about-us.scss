@@ -70,10 +70,7 @@
     box-shadow: 0px 4px 13px 0px rgba(191, 58, 255, 0.44);
     height: 585px;
     width: 6px;
-    // position: relative;
-    // z-index: 10;
-    // transform: rotate(90deg);
-
+  
     @include media-breakpoint-down(xxs) {
       height: 562px;
       margin-top: 30px;
@@ -112,15 +109,12 @@
   }
 
   &__slider {
-    // overflow: hidden;
     max-width: 612px;
-    // overflow-y: visible;
-    
   }
 
   &__slider .swiper-scrollbar {
     background-color: rgba(255,255,255,0.4);
-    background-color: red;
+    // background-color: red;
     position: relative;
     width: 406px;
     margin-left: 12px;

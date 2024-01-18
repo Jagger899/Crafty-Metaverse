@@ -204,6 +204,10 @@ a {
   color: inherit;
 }
 
+main {
+  overflow: hidden;
+}
+
 .lock {
   overflow: hidden;
 }
@@ -2113,6 +2117,7 @@ a {
   position: relative;
   font-family: "Gilroy", sans-serif;
   overflow: hidden;
+  z-index: 1;
 }
 @media (max-width: 576px) {
   .resourses {
@@ -2589,6 +2594,339 @@ a {
     top: 28%;
     z-index: -9;
   }
+}
+
+.run-strings {
+  position: relative;
+  top: -298px;
+  z-index: 4;
+}
+@media (max-width: 1024px) {
+  .run-strings {
+    top: -150px;
+  }
+}
+@media (max-width: 576px) {
+  .run-strings {
+    top: -244px;
+  }
+}
+.run-strings__top-box {
+  background: rgba(255, 255, 255, 0.04);
+  width: 120%;
+  position: relative;
+  border: 2px solid rgba(253, 250, 250, 0.4);
+  margin-bottom: 44px;
+  overflow: hidden;
+  transform: rotate(-9.094deg);
+  left: -60px;
+  z-index: 5;
+}
+@media (max-width: 1024px) {
+  .run-strings__top-box {
+    margin-bottom: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .run-strings__top-box {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .run-strings__top-box {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .run-strings__top-box {
+    margin-bottom: 5px;
+  }
+}
+.run-strings__top-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(10, 10, 10, 0.04);
+  background-color: #000;
+  backdrop-filter: blur(100px);
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.run-strings__top-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(9.09deg);
+  z-index: -1;
+}
+.run-strings__top-text-box {
+  display: flex;
+  width: 200%;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 60px;
+}
+@keyframes top-running {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.run-strings__top-text {
+  font-family: "HeliosExtC";
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  animation: top-running 5s infinite linear;
+}
+@media (max-width: 1650px) {
+  .run-strings__top-text {
+    font-size: 150px;
+  }
+}
+@media (max-width: 1420px) {
+  .run-strings__top-text {
+    font-size: 120px;
+  }
+}
+@media (max-width: 1024px) {
+  .run-strings__top-text {
+    font-size: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .run-strings__top-text {
+    font-size: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .run-strings__top-text {
+    font-size: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .run-strings__top-text {
+    font-size: 52px;
+  }
+}
+.run-strings__bottom-box {
+  background-color: #000;
+  position: relative;
+  width: 110%;
+  transform: rotate(-9.094deg);
+  overflow: hidden;
+  left: -40px;
+}
+.run-strings__bottom-box svg {
+  transform: rotate(9.09deg);
+}
+@media (max-width: 576px) {
+  .run-strings__bottom-box svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+.run-strings__bottom-content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 60px;
+  animation: second-run 5s infinite linear;
+}
+.run-strings__bottom-text-first {
+  font-family: HeliosExtC;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.72px;
+  background: var(--2, linear-gradient(90deg, #21FCFF 0%, #FD40FF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 1650px) {
+  .run-strings__bottom-text-first {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1420px) {
+  .run-strings__bottom-text-first {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .run-strings__bottom-text-first {
+    font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .run-strings__bottom-text-first {
+    font-size: 26px;
+  }
+}
+@media (max-width: 576px) {
+  .run-strings__bottom-text-first {
+    font-size: 22px;
+  }
+}
+@media (max-width: 375px) {
+  .run-strings__bottom-text-first {
+    font-size: 19px;
+  }
+}
+@keyframes second-run {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.run-strings__bottom-text-second {
+  text-align: right;
+  font-family: HeliosExtC;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.72px;
+  background: var(--2, linear-gradient(90deg, #21FCFF 0%, #FD40FF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 1650px) {
+  .run-strings__bottom-text-second {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1420px) {
+  .run-strings__bottom-text-second {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .run-strings__bottom-text-second {
+    font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .run-strings__bottom-text-second {
+    font-size: 26px;
+  }
+}
+@media (max-width: 576px) {
+  .run-strings__bottom-text-second {
+    font-size: 22px;
+  }
+}
+@media (max-width: 375px) {
+  .run-strings__bottom-text-second {
+    font-size: 19px;
+  }
+}
+
+.game {
+  padding: 292px 0 80px;
+  position: relative;
+  top: -430px;
+}
+.game__bg-first {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: -5;
+}
+.game__bg-img {
+  position: absolute;
+  width: 130%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -4;
+  object-fit: cover;
+}
+.game__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+.game__hero-first {
+  margin-right: 50px;
+}
+.game__content {
+  max-width: 644px;
+  position: relative;
+  padding-top: 68px;
+}
+.game__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 62px;
+  background: #56FFEB;
+  box-shadow: 0px 4px 13px 0px rgba(191, 58, 255, 0.44);
+}
+.game__content-title {
+  font-family: HeliosExtC;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 109%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 27px;
+}
+.game__content-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.game__content-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+.game__content-button {
+  margin: 0 auto;
+}
+.game__content-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -4;
+  object-fit: cover;
+}
+.game__hero-second {
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */

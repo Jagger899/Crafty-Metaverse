@@ -119,6 +119,17 @@
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    // animation: run 5s infinite linear;
+
+    // @keyframes run {
+    //   0% {
+    //     transform: translateX(100%);
+    //   }
+
+    //   100% {
+    //     transform: translateX(0%);
+    //   }
+    // }
 
     @include media-breakpoint-down(xs) {
       font-size: 20px;

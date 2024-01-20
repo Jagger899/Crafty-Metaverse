@@ -2,8 +2,9 @@
   padding: 65px 0 318px;
   position: relative;
   font-family: 'Gilroy', sans-serif;
-  overflow: hidden; 
+  // overflow: hidden; 
   z-index: 1;
+  position: relative;
 
   @include media-breakpoint-down(xs) {
     padding-top: 82px;

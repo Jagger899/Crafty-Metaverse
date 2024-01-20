@@ -2,20 +2,22 @@
   // background: rgba(255, 255, 255, 0.04);
   // backdrop-filter: blur(100px);
   position: relative;
-  top: -298px;
+  // top: -298px;
+  margin-top: -298px;
   z-index:4;
 
   @include media-breakpoint-down(md) {
-    top: -150px;
+    // top: -150px;
   }
 
   @include media-breakpoint-down(xs) {
-    top: -244px;
+    margin-top: -245px;
   }
  
   &__top-box {
     // height: 289px;
     background: rgba(255, 255, 255, 0.04);
+    // background-color: #000;
     width: 120%;
     position: relative;
     border: 2px solid rgba(253, 250, 250, 0.4);
@@ -68,10 +70,11 @@
 
   &__top-text-box{
     display: flex;
-    width: 200%;
+    // width: 200%;
     flex-wrap: nowrap;
     align-items: center;
     gap: 60px;
+    animation: top-running 5s infinite linear;
   }
 
   @keyframes top-running {
@@ -80,7 +83,7 @@
     }
 
     100% {
-      transform: translateX(100%);
+      transform: translateX(-100%);
     }
   }
 
@@ -92,7 +95,7 @@
     line-height: 140%;
     letter-spacing: 2px;
     white-space: nowrap;
-    animation: top-running 5s infinite linear;
+    // animation: top-running 5s infinite linear;
     
      @include media-breakpoint-down(l) {
         font-size: 150px;

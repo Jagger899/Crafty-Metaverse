@@ -13,6 +13,11 @@
 
   @include media-breakpoint-down(xs) {
     padding: 27px 0 50px;
+    margin-bottom: 400px;
+  }
+
+  @include media-breakpoint-down(xxs) {
+    margin-bottom: 294px;
   }
 
   &__inner {
@@ -96,6 +101,7 @@
       padding-left: 0;
       
       max-width: 353px;
+      
     }
     // max-width: 1348px;
   }

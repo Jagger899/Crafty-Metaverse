@@ -83,7 +83,7 @@
       right: 6%;
     }
 
-    @include media-breakpoint-down(s) {
+    @include media-breakpoint-down(xs) {
       width: 578.99px;
       height: 356.982px;
       border-radius: 578px;

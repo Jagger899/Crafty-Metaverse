@@ -13,6 +13,10 @@
     padding-bottom: 100px;
   }
 
+  @include media-breakpoint-down(xxs) {
+    padding-bottom: 50px;
+  }
+
   &__container {
     max-width: 1722px;
     position: relative;

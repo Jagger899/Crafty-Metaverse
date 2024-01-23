@@ -13,8 +13,9 @@ const dropTextFirst = document.getElementById('roadmap__dropdown-text-first');
 const dropButtonSecond = document.getElementById('roadmap__dropdown-button-second');
 const dropTextSecond = document.getElementById('roadmap__dropdown-text-second');
 
-const roadmapArrowFirst = document.getElementById('roadmap-arrow-first');
-const roadmapArrowSecond = document.getElementById('roadmap-arrow-second');
+const roadmapArrowFirst = document.getElementsByClassName('roadmap__dropdown-arrow');
+console.log(roadmapArrowFirst);
+// const roadmapArrowSecond = document.getElementsByClassName('roadmap-arrow-second');
 
 menuOpen.addEventListener('click', function (event) {
   event.preventDefault();
@@ -70,7 +71,7 @@ const swiper = new Swiper('.about-us__slider', {
 
 dropButtonFirst.addEventListener('click', function () {
   let currentElement = dropButtonFirst.nextElementSibling;
-  roadmapArrowFirst.classList.toggle('roadmap__dropdown-arrow_rotate')
+  roadmapArrowFirst[0].classList.toggle('roadmap__dropdown-arrow_rotate')
 
   if (window.innerWidth >= 1313 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
     currentElement.classList.add('roadmap__dropdown-text_visible');
@@ -86,7 +87,7 @@ dropButtonFirst.addEventListener('click', function () {
 
 dropButtonSecond.addEventListener('click', function () {
   let currentElement = dropButtonSecond.nextElementSibling;
-  roadmapArrowSecond.classList.toggle('roadmap__dropdown-arrow_rotate');
+  roadmapArrowFirst[1].classList.toggle('roadmap__dropdown-arrow_rotate');
 
   if (window.innerWidth >= 1295 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
     currentElement.classList.add('roadmap__dropdown-text_visible');

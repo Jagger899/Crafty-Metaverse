@@ -282,7 +282,7 @@ main {
 }
 .header_fixed {
   background-color: rgba(36, 4, 37, 0.8);
-  box-shadow: 0 5px 25px rgb(32, 3, 44);
+  box-shadow: 0 5px 5px rgb(32, 3, 44);
 }
 @media (max-width: 375px) {
   .header {
@@ -292,6 +292,10 @@ main {
 .header__logo {
   position: relative;
   z-index: 10;
+}
+.header__logo-svg {
+  width: 28px;
+  height: 28px;
 }
 .header__container {
   display: flex;
@@ -569,6 +573,16 @@ main {
 @media (max-width: 375px) {
   .promo__title-dec-first {
     display: none;
+  }
+}
+.promo__title-img {
+  width: 46px;
+  height: 46px;
+}
+@media (max-width: 576px) {
+  .promo__title-img {
+    width: 28px;
+    height: 28px;
   }
 }
 .promo__title-dec-second {
@@ -1170,6 +1184,8 @@ main {
   opacity: 1;
 }
 .roadmap__dropdown-arrow {
+  width: 15px;
+  height: 9px;
   transition: transform 300ms linear;
 }
 .roadmap__dropdown-arrow_rotate {
@@ -2545,6 +2561,8 @@ main {
   right: 43%;
   top: 19%;
   position: absolute;
+  width: 95px;
+  height: 95px;
 }
 @media (max-width: 1024px) {
   .resourses__adv-buble-first {
@@ -2723,11 +2741,13 @@ main {
   overflow: hidden;
   left: -40px;
 }
-.run-strings__bottom-box svg {
-  transform: rotate(9.09deg);
+.run-strings__bottom-svg {
+  width: 46px;
+  height: 46px;
+  transform: rotate(-9.09deg);
 }
 @media (max-width: 576px) {
-  .run-strings__bottom-box svg {
+  .run-strings__bottom-svg {
     width: 18px;
     height: 18px;
   }
@@ -4007,6 +4027,15 @@ main {
   gap: 11px;
   margin-left: 32px;
 }
+.team__card-social {
+  width: 49px;
+  height: 49px;
+  cursor: pointer;
+  fill: white;
+}
+.team__card-social:hover {
+  fill: #FC00FF;
+}
 .team__card-prof {
   font-size: 16px;
   font-weight: 500;
@@ -4119,6 +4148,16 @@ main {
 }
 @media (max-width: 576px) {
   .team .team__run-string-text svg {
+    width: 23px;
+    height: 23px;
+  }
+}
+.team__run-string-svg {
+  width: 46px;
+  height: 46px;
+}
+@media (max-width: 576px) {
+  .team__run-string-svg {
     width: 23px;
     height: 23px;
   }

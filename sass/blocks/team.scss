@@ -341,6 +341,17 @@
     margin-left: 32px;
   }
 
+  &__card-social {
+    width: 49px;
+    height: 49px;
+    cursor: pointer;
+    fill: white;
+
+    &:hover {
+      fill: #FC00FF;
+    }
+  }
+
   &__card-prof {
     font-size: 16px;
     font-weight: 500;
@@ -458,6 +469,16 @@
   .team__run-string-text svg {
     transform: rotate(-6.06deg);
 
+    @include media-breakpoint-down(xs) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &__run-string-svg {
+    width: 46px;
+    height: 46px;
+    
     @include media-breakpoint-down(xs) {
       width: 23px;
       height: 23px;

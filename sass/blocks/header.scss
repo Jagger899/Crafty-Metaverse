@@ -9,7 +9,7 @@
 
     &_fixed {
       background-color: rgba(36, 4, 37, 0.8);
-      box-shadow: 0 5px 25px rgb(32, 3, 44);
+      box-shadow: 0 5px 5px rgb(32, 3, 44);
     }
 
   @include media-breakpoint-down(xxs) {
@@ -19,6 +19,11 @@
   &__logo {
     position: relative;
     z-index: 10;
+  }
+
+  &__logo-svg{
+    width: 28px;
+    height: 28px;
   }
 
   &__container {

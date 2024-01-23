@@ -439,6 +439,8 @@
     right:43%;
     top:19%;
     position: absolute;
+    width: 95px;
+    height: 95px;
 
     @include media-breakpoint-down(md) {
       right: 18%;

@@ -14,9 +14,8 @@
   <header class="header" id="header">
     <div class="header__container">
       <a href="#" class="header__logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-          <path d="M2.91663 2.9165L25.0833 25.0832V11.361L16.6388 2.9165V25.0832H2.91663V2.9165Z" stroke="white"
-            stroke-width="3" stroke-linejoin="round" />
+        <svg class="header__logo-svg">
+          <use xlink:href="./sprite.svg#logo" ></use>
         </svg>
       </a>
 
@@ -117,20 +116,22 @@
           <div class="promo__content-inner">
             <h2 class="promo__subtitle">Crafty Metaverse</h2>
             <h1 class="promo__title">A SHARED, IMMERSIVE MULTI-BLOCKCHAIN BASED 
-              <span class="promo__title-dec-first"><svg xmlns="http://www.w3.org/2000/svg" class="promo__title-img"
-                  width="46" height="46" viewBox="0 0 46 46" fill="none">
-                  <path d="M23 0L26.2527 19.7473L46 23L26.2527 26.2527L23 46L19.7473 26.2527L0 23L19.7473 19.7473L23 0Z"
-                    fill="white" />
+              <span class="promo__title-dec-first">
+                <svg class="promo__title-img">
+                  <use xlink:href="./sprite.svg#text-decor"></use>
                 </svg>
-              </span> METAVERSE <span class="promo__title-dec-second">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
-                    <path
-                    d="M14.081 0L16.0724 12.0897L28.162 14.081L16.0724 16.0724L14.081 28.162L12.0897 16.0724L0 14.081L12.0897 12.0897L14.081 0Z"
-                    fill="white" />
-                    </svg>
-                </span> 
- ECOSYSTEM</h1>
+              </span> METAVERSE 
+
+              <span class="promo__title-dec-second">
+                <svg class="promo__title-img">
+                  <use xlink:href="./sprite.svg#promo-dec"></use>
+                </svg>
+              </span> 
+              ECOSYSTEM
+            </h1>
+
             <a href="#" class="button promo__button">Invest Now</a>
+
             <div class="promo__content-lines-box">
               <img src="./images/promo/promo-lines.svg" alt="" class="promo__content-lines-svg">
             </div>
@@ -150,8 +151,6 @@
       <div class="promo__overlay"></div>
 
       <picture>
-        <!-- <source srcset="./images/promo/promo-bg.webp" type="image/webp"> -->
-
         <img src="./images/promo/promo-bg.png" alt="" class="promo__main-img">
       </picture>
     </section>
@@ -243,11 +242,10 @@
               </ul>
 
               <div class="roadmap__dropdown">
-                <button class="roadmap__dropdown-button" id="roadmap__dropdown-button-first">More <svg id="roadmap-arrow-first" 
-                class="roadmap__dropdown-arrow"  xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9"
-                    fill="none">
-                    <path d="M1 1L7.5 7L14 1" stroke="white" stroke-width="2"/>
-                </svg>
+                <button class="roadmap__dropdown-button" id="roadmap__dropdown-button-first">More 
+                  <svg class="roadmap__dropdown-arrow">
+                    <use xlink:href="./sprite.svg#roadmap-arrow" ></use>
+                  </svg>
                 </button>
 
                 <div class="roadmap__dropdown-text" id="roadmap__dropdown-text-first">
@@ -318,9 +316,9 @@
               </ul>
 
               <div class="roadmap__dropdown">
-                <button class="roadmap__dropdown-button" id="roadmap__dropdown-button-second">More <svg id="roadmap-arrow-second" class="roadmap__dropdown-arrow"
-                    xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                    <path d="M1 1L7.5 7L14 1" stroke="white" stroke-width="2" />
+                <button class="roadmap__dropdown-button" id="roadmap__dropdown-button-second">More 
+                  <svg class="roadmap__dropdown-arrow">
+                    <use xlink:href="./sprite.svg#roadmap-arrow"></use>
                   </svg>
                 </button>
 
@@ -514,17 +512,13 @@
               the platform. This means that every single transaction in the Crafty Metaverse space will be conducted with the $CMETA
               token</p>
               <a href="#" class="button resourses__content-button">Play (Coming Soon)</a>
-
             </div>
-
             <img src="./images/resourses/lines.svg" alt="lines" class="resourses__content-lines">
 
             <picture>
               <source srcset="./images/resourses/blur-content.webp" type="image/webp">
               <img src="./images/resourses/blur-content.png" alt="decor" class="resourses__content-decor">
             </picture>
-
-
           </div>
 
           <div class="resourses__advant">
@@ -538,71 +532,11 @@
               <img src="./images/resourses/blur-group.png" alt="main-photo" class="resourses__advant-decor">
             </picture>
 
-            <svg class="resourses__adv-buble-second" xmlns="http://www.w3.org/2000/svg" width="62" height="61" viewBox="0 0 62 61" fill="none">
-              <g filter="url(#filter0_bi_1_561)">
-                <circle cx="30.7012" cy="30.5015" r="30.5" fill="white" fill-opacity="0.01" />
-              </g>
-              <defs>
-                <filter id="filter0_bi_1_561" x="-99.7988" y="-99.9985" width="261" height="261" filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="50" />
-                  <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_561" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_561" result="shape" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0" />
-                  <feBlend mode="normal" in2="shape" result="effect2_innerShadow_1_561" />
-                </filter>
-              </defs>
-            </svg>
+            <img src="./images/resourses/buble-second.svg" alt="buble" class="resourses__adv-buble-second">
 
-            <svg class="resourses__adv-buble-first" xmlns="http://www.w3.org/2000/svg" width="96" height="95" viewBox="0 0 96 95" fill="none">
-              <g filter="url(#filter0_bi_1_560)">
-                <circle cx="47.7015" cy="47.5015" r="47.5" fill="white" fill-opacity="0.01" />
-              </g>
-              <defs>
-                <filter id="filter0_bi_1_560" x="-99.7985" y="-99.9985" width="295" height="295" filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="50" />
-                  <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_560" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_560" result="shape" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0" />
-                  <feBlend mode="normal" in2="shape" result="effect2_innerShadow_1_560" />
-                </filter>
-              </defs>
-            </svg>
+            <img src="./images/resourses/buble-first.svg" alt="" class="resourses__adv-buble-first">
 
-            <svg class="resourses__adv-buble-third" xmlns="http://www.w3.org/2000/svg" width="50" height="49" viewBox="0 0 50 49" fill="none">
-              <g filter="url(#filter0_bi_1_559)">
-                <circle cx="24.703" cy="24.5015" r="24.5" fill="white" fill-opacity="0.01" />
-              </g>
-              <defs>
-                <filter id="filter0_bi_1_559" x="-99.797" y="-99.9985" width="249" height="249" filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="50" />
-                  <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_559" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_559" result="shape" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0" />
-                  <feBlend mode="normal" in2="shape" result="effect2_innerShadow_1_559" />
-                </filter>
-              </defs>
-            </svg>
+            <img src="./images/resourses/buble-third.svg" alt="buble" class="resourses__adv-buble-third">
 
             <dl class="resourses__advant-list">
               <div class="resourses__advant-list-container">
@@ -651,7 +585,6 @@
           <div class="resourses__decor-mobile"></div>
         </div>
       </div>
-      
     </section>
 
     <section class="run-strings">
@@ -664,66 +597,49 @@
           <p class="run-strings__top-text">VR GAME MARKETPLACE</p>
           <p class="run-strings__top-text">VR GAME MARKETPLACE</p>
         </div>
-
-        <!-- <div class="run-strings__top-bg"></div> -->
-
         <img src="./images/run-string/dots2.svg" alt="dots" class="run-strings__top-dots" width="100%" height="100%">
       </div>
 
       <div class="run-strings__bottom-box">
         <div class="run-strings__bottom-content">
-            <span class="run-strings__bottom-text-first">CRAFTY METAVERSE <svg xmlns="http://www.w3.org/2000/svg" width="55" height="56" viewBox="0 0 55 56" fill="none">
-              <path
-                d="M22.544 5.40468L29.6487 24.1145L49.6489 23.3859L30.939 30.4907L31.6677 50.4908L24.5629 31.781L4.56276 32.5096L23.2726 25.4048L22.544 5.40468Z"
-                fill="white" />
+            <span class="run-strings__bottom-text-first">CRAFTY METAVERSE 
+              <svg class="run-strings__bottom-svg">
+                <use xlink:href="./sprite.svg#text-decor"></use>
               </svg>
             </span>
-            <span class="run-strings__bottom-text-second">CRAFTY METAVERSE <svg xmlns="http://www.w3.org/2000/svg" width="55" height="56" viewBox="0 0 55 56" fill="none">
-              <path
-                d="M22.544 5.40468L29.6487 24.1145L49.6489 23.3859L30.939 30.4907L31.6677 50.4908L24.5629 31.781L4.56276 32.5096L23.2726 25.4048L22.544 5.40468Z"
-                fill="white" />
-            </svg> 
-            </span>
-            <span class="run-strings__bottom-text-first">CRAFTY METAVERSE <svg xmlns="http://www.w3.org/2000/svg" width="55"
-                height="56" viewBox="0 0 55 56" fill="none">
-                <path
-                  d="M22.544 5.40468L29.6487 24.1145L49.6489 23.3859L30.939 30.4907L31.6677 50.4908L24.5629 31.781L4.56276 32.5096L23.2726 25.4048L22.544 5.40468Z"
-                  fill="white" />
+            <span class="run-strings__bottom-text-second">CRAFTY METAVERSE 
+              <svg class="run-strings__bottom-svg">
+                <use xlink:href="./sprite.svg#text-decor"></use>
               </svg>
             </span>
-            <span class="run-strings__bottom-text-second">CRAFTY METAVERSE <svg xmlns="http://www.w3.org/2000/svg" width="55"
-                height="56" viewBox="0 0 55 56" fill="none">
-                <path
-                  d="M22.544 5.40468L29.6487 24.1145L49.6489 23.3859L30.939 30.4907L31.6677 50.4908L24.5629 31.781L4.56276 32.5096L23.2726 25.4048L22.544 5.40468Z"
-                  fill="white" />
+            <span class="run-strings__bottom-text-first">CRAFTY METAVERSE 
+              <svg class="run-strings__bottom-svg">
+                <use xlink:href="./sprite.svg#text-decor"></use>
               </svg>
             </span>
-            <span class="run-strings__bottom-text-first">CRAFTY METAVERSE <svg xmlns="http://www.w3.org/2000/svg" width="55"
-                height="56" viewBox="0 0 55 56" fill="none">
-                <path
-                  d="M22.544 5.40468L29.6487 24.1145L49.6489 23.3859L30.939 30.4907L31.6677 50.4908L24.5629 31.781L4.56276 32.5096L23.2726 25.4048L22.544 5.40468Z"
-                  fill="white" />
+            <span class="run-strings__bottom-text-second">CRAFTY METAVERSE 
+              <svg class="run-strings__bottom-svg">
+                <use xlink:href="./sprite.svg#text-decor"></use>
               </svg>
             </span>
-            <span class="run-strings__bottom-text-second">CRAFTY METAVERSE <svg xmlns="http://www.w3.org/2000/svg" width="55"
-                height="56" viewBox="0 0 55 56" fill="none">
-                <path
-                  d="M22.544 5.40468L29.6487 24.1145L49.6489 23.3859L30.939 30.4907L31.6677 50.4908L24.5629 31.781L4.56276 32.5096L23.2726 25.4048L22.544 5.40468Z"
-                  fill="white" />
+            <span class="run-strings__bottom-text-first">CRAFTY METAVERSE 
+              <svg class="run-strings__bottom-svg">
+                <use xlink:href="./sprite.svg#text-decor"></use>
               </svg>
             </span>
-            <span class="run-strings__bottom-text-first">CRAFTY METAVERSE <svg xmlns="http://www.w3.org/2000/svg" width="55"
-                height="56" viewBox="0 0 55 56" fill="none">
-                <path
-                  d="M22.544 5.40468L29.6487 24.1145L49.6489 23.3859L30.939 30.4907L31.6677 50.4908L24.5629 31.781L4.56276 32.5096L23.2726 25.4048L22.544 5.40468Z"
-                  fill="white" />
+            <span class="run-strings__bottom-text-second">CRAFTY METAVERSE 
+              <svg class="run-strings__bottom-svg">
+                <use xlink:href="./sprite.svg#text-decor"></use>
               </svg>
             </span>
-            <span class="run-strings__bottom-text-second">CRAFTY METAVERSE <svg xmlns="http://www.w3.org/2000/svg" width="55"
-                height="56" viewBox="0 0 55 56" fill="none">
-                <path
-                  d="M22.544 5.40468L29.6487 24.1145L49.6489 23.3859L30.939 30.4907L31.6677 50.4908L24.5629 31.781L4.56276 32.5096L23.2726 25.4048L22.544 5.40468Z"
-                  fill="white" />
+            <span class="run-strings__bottom-text-first">CRAFTY METAVERSE 
+              <svg class="run-strings__bottom-svg">
+                <use xlink:href="./sprite.svg#text-decor"></use>
+              </svg>
+            </span>
+            <span class="run-strings__bottom-text-second">CRAFTY METAVERSE 
+              <svg class="run-strings__bottom-svg">
+                <use xlink:href="./sprite.svg#text-decor"></use>
               </svg>
             </span>
         </div>
@@ -871,118 +787,23 @@
 
               <img src="./images/team/stan.png" alt="stan" class="team__card-img">
             </picture>
-            <!-- <img src="./images/team/stan2.png" alt="stan" class="team__card-img"> -->
             <h3 class="team__card-prof team__card-prof_first">CTO/Creative Director</h3>
             <h2 class="team__card-name team__card-name_first">Stan</h2>
             <div class="team__card-socials">
-              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
-                <g filter="url(#filter0_bi_1_804)">
-                  <rect y="0.584961" width="48.7047" height="48.7047" rx="17" fill="white" fill-opacity="0.02" />
-                  <rect x="0.5" y="1.08496" width="47.7047" height="47.7047" rx="16.5" stroke="white" stroke-opacity="0.2" />
-                  <path
-                    d="M34.0933 24.9372C34.0933 19.5797 29.7099 15.1963 24.3524 15.1963C18.9949 15.1963 14.6115 19.5797 14.6115 24.9372C14.6115 29.8077 18.1425 33.8258 22.7695 34.5564V27.7378H20.3343V24.9372H22.7695V22.7455C22.7695 20.3103 24.2306 18.9709 26.4223 18.9709C27.5182 18.9709 28.6141 19.2144 28.6141 19.2144V21.6497H27.3964C26.1788 21.6497 25.8135 22.3802 25.8135 23.1108V24.9372H28.4923L28.0052 27.7378H25.6918V34.6782C30.5622 33.9476 34.0933 29.8077 34.0933 24.9372Z"
-                    fill="white" />
-                </g>
-                <defs>
-                  <filter id="filter0_bi_1_804" x="-41" y="-40.415" width="130.705" height="130.705" filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20.5" />
-                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_804" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_804" result="shape" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha" />
-                    <feOffset dy="4" />
-                    <feGaussianBlur stdDeviation="6.5" />
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.08 0" />
-                    <feBlend mode="normal" in2="shape" result="effect2_innerShadow_1_804" />
-                  </filter>
-                </defs>
+              <svg class="team__card-social">
+                <use xlink:href="./sprite.svg#facebook"></use>
               </svg>
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="49" viewBox="0 0 50 49" fill="none">
-                <g filter="url(#filter0_bi_1_808)">
-                  <rect x="0.31665" width="48.7047" height="48.7047" rx="17" fill="white" fill-opacity="0.02" />
-                  <rect x="0.81665" y="0.5" width="47.7047" height="47.7047" rx="16.5" stroke="white" stroke-opacity="0.2" />
-                  <path
-                    d="M34.41 18.2642C33.6794 18.6295 32.9488 18.7512 32.0965 18.873C32.9488 18.3859 33.5577 17.6554 33.8012 16.6813C33.0706 17.1683 32.2183 17.4118 31.2442 17.6554C30.5136 16.9248 29.4178 16.4377 28.3219 16.4377C25.7649 16.4377 23.8167 18.873 24.4255 21.3082C21.138 21.1865 18.2157 19.6036 16.1457 17.1683C15.0499 18.9947 15.6587 21.3082 17.3633 22.5258C16.7545 22.5258 16.1457 22.2823 15.5369 22.0388C15.5369 23.8652 16.8763 25.5699 18.7027 26.0569C18.0939 26.1787 17.4851 26.3005 16.8763 26.1787C17.3633 27.7616 18.8245 28.9792 20.6509 28.9792C19.1898 30.0751 16.9981 30.6839 14.9281 30.4404C16.7545 31.5362 18.8245 32.2668 21.0162 32.2668C28.4437 32.2668 32.5836 26.0569 32.34 20.3341C33.1924 19.8471 33.9229 19.1165 34.41 18.2642Z"
-                    fill="white" />
-                </g>
-                <defs>
-                  <filter id="filter0_bi_1_808" x="-40.6833" y="-41" width="130.705" height="130.705" filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20.5" />
-                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_808" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_808" result="shape" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha" />
-                    <feOffset dy="4" />
-                    <feGaussianBlur stdDeviation="6.5" />
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.08 0" />
-                    <feBlend mode="normal" in2="shape" result="effect2_innerShadow_1_808" />
-                  </filter>
-                </defs>
+              <svg class="team__card-social">
+                <use xlink:href="./sprite.svg#twitter"></use>
               </svg>
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                <g filter="url(#filter0_bi_1_802)">
-                  <rect x="0.632446" y="0.584961" width="48.7047" height="48.7047" rx="17" fill="white" fill-opacity="0.02" />
-                  <rect x="1.13245" y="1.08496" width="47.7047" height="47.7047" rx="16.5" stroke="white" stroke-opacity="0.2" />
-                  <path
-                    d="M24.9848 16.6577C27.6635 16.6577 28.0288 16.6577 29.1247 16.6577C30.0988 16.6577 30.5858 16.9012 30.9511 17.023C31.4381 17.2665 31.8034 17.3883 32.1687 17.7536C32.534 18.1189 32.7775 18.4842 32.8993 18.9712C33.021 19.3365 33.1428 19.8235 33.2646 20.7976C33.2646 21.8935 33.2646 22.137 33.2646 24.9375C33.2646 27.7381 33.2646 27.9816 33.2646 29.0774C33.2646 30.0515 33.021 30.5386 32.8993 30.9039C32.6558 31.3909 32.534 31.7562 32.1687 32.1215C31.8034 32.4868 31.4381 32.7303 30.9511 32.852C30.5858 32.9738 30.0988 33.0956 29.1247 33.2173C28.0288 33.2173 27.7853 33.2173 24.9848 33.2173C22.1842 33.2173 21.9407 33.2173 20.8449 33.2173C19.8708 33.2173 19.3837 32.9738 19.0184 32.852C18.5314 32.6085 18.1661 32.4868 17.8008 32.1215C17.4355 31.7562 17.192 31.3909 17.0703 30.9039C16.9485 30.5386 16.8267 30.0515 16.705 29.0774C16.705 27.9816 16.705 27.7381 16.705 24.9375C16.705 22.137 16.705 21.8935 16.705 20.7976C16.705 19.8235 16.9485 19.3365 17.0703 18.9712C17.3138 18.4842 17.4355 18.1189 17.8008 17.7536C18.1661 17.3883 18.5314 17.1448 19.0184 17.023C19.3837 16.9012 19.8708 16.7795 20.8449 16.6577C21.9407 16.6577 22.306 16.6577 24.9848 16.6577ZM24.9848 14.8313C22.1842 14.8313 21.9407 14.8313 20.8449 14.8313C19.749 14.8313 19.0184 15.0748 18.4096 15.3183C17.8008 15.5619 17.192 15.9272 16.5832 16.536C15.9744 17.1448 15.7309 17.6318 15.3656 18.3624C15.1221 18.9712 15.0003 19.7018 14.8785 20.7976C14.8785 21.8935 14.8785 22.2588 14.8785 24.9375C14.8785 27.7381 14.8785 27.9816 14.8785 29.0774C14.8785 30.1733 15.1221 30.9039 15.3656 31.5127C15.6091 32.1215 15.9744 32.7303 16.5832 33.3391C17.192 33.9479 17.6791 34.1914 18.4096 34.5567C19.0184 34.8002 19.749 34.922 20.8449 35.0438C21.9407 35.0438 22.306 35.0438 24.9848 35.0438C27.6635 35.0438 28.0288 35.0438 29.1247 35.0438C30.2205 35.0438 30.9511 34.8002 31.5599 34.5567C32.1687 34.3132 32.7775 33.9479 33.3863 33.3391C33.9951 32.7303 34.2387 32.2432 34.604 31.5127C34.8475 30.9039 34.9692 30.1733 35.091 29.0774C35.091 27.9816 35.091 27.6163 35.091 24.9375C35.091 22.2588 35.091 21.8935 35.091 20.7976C35.091 19.7018 34.8475 18.9712 34.604 18.3624C34.3604 17.7536 33.9951 17.1448 33.3863 16.536C32.7775 15.9272 32.2905 15.6836 31.5599 15.3183C30.9511 15.0748 30.2205 14.9531 29.1247 14.8313C28.0288 14.8313 27.7853 14.8313 24.9848 14.8313Z"
-                    fill="white" />
-                  <path
-                    d="M24.9848 19.7018C22.0625 19.7018 19.749 22.0152 19.749 24.9375C19.749 27.8598 22.0625 30.1733 24.9848 30.1733C27.9071 30.1733 30.2205 27.8598 30.2205 24.9375C30.2205 22.0152 27.9071 19.7018 24.9848 19.7018ZM24.9848 28.3469C23.1583 28.3469 21.5754 26.8857 21.5754 24.9375C21.5754 23.1111 23.0366 21.5282 24.9848 21.5282C26.8112 21.5282 28.3941 22.9893 28.3941 24.9375C28.3941 26.764 26.8112 28.3469 24.9848 28.3469Z"
-                    fill="white" />
-                  <path
-                    d="M30.3423 20.7976C31.0148 20.7976 31.5599 20.2525 31.5599 19.58C31.5599 18.9075 31.0148 18.3624 30.3423 18.3624C29.6698 18.3624 29.1247 18.9075 29.1247 19.58C29.1247 20.2525 29.6698 20.7976 30.3423 20.7976Z"
-                    fill="white" />
-                </g>
-                <defs>
-                  <filter id="filter0_bi_1_802" x="-40.3676" y="-40.415" width="130.705" height="130.705" filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20.5" />
-                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_802" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_802" result="shape" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha" />
-                    <feOffset dy="4" />
-                    <feGaussianBlur stdDeviation="6.5" />
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.08 0" />
-                    <feBlend mode="normal" in2="shape" result="effect2_innerShadow_1_802" />
-                  </filter>
-                </defs>
+              <svg class="team__card-social">
+                <use xlink:href="./sprite.svg#instagramm"></use>
               </svg>
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
-                <g filter="url(#filter0_bi_1_806)">
-                  <rect x="0.295166" y="0.584961" width="48.7047" height="48.7047" rx="17" fill="white" fill-opacity="0.02" />
-                  <rect x="0.795166" y="1.08496" width="47.7047" height="47.7047" rx="16.5" stroke="white" stroke-opacity="0.2" />
-                  <path
-                    d="M19.29 34.6782H15.1501V21.6497H19.29V34.6782ZM17.2201 19.8232C15.8807 19.8232 14.9066 18.8491 14.9066 17.5098C14.9066 16.1704 16.0025 15.1963 17.2201 15.1963C18.5595 15.1963 19.5336 16.1704 19.5336 17.5098C19.5336 18.8491 18.5595 19.8232 17.2201 19.8232ZM34.3885 34.6782H30.2486V27.616C30.2486 25.546 29.3963 24.9372 28.1786 24.9372C26.961 24.9372 25.7434 25.9113 25.7434 27.7378V34.6782H21.6035V21.6497H25.4999V23.4761C25.8652 22.6238 27.3263 21.2844 29.3963 21.2844C31.7097 21.2844 34.145 22.6238 34.145 26.6419V34.6782H34.3885Z"
-                    fill="white" />
-                </g>
-                <defs>
-                  <filter id="filter0_bi_1_806" x="-40.7048" y="-40.415" width="130.705" height="130.705" filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="20.5" />
-                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_806" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_806" result="shape" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha" />
-                    <feOffset dy="4" />
-                    <feGaussianBlur stdDeviation="6.5" />
-                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.08 0" />
-                    <feBlend mode="normal" in2="shape" result="effect2_innerShadow_1_806" />
-                  </filter>
-                </defs>
+              <svg class="team__card-social">
+                <use xlink:href="./sprite.svg#linkedin"></use>
               </svg>
             </div>
           </div>
@@ -1023,67 +844,26 @@
 
       <div class="team__run-string">
         <span class="team__run-string-text team__run-string-text_first">CRAFTY METAVERSE 
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-          <rect x="0.466966" y="0.530982" width="45" height="45"
-            transform="matrix(0.997949 0.0640157 -0.0640169 0.997949 3.92387 0.712407)" stroke="url(#paint0_linear_1_899)"
-            stroke-opacity="0.2" />
-          <path
-            d="M26.8417 2.21357L28.8236 22.1286L48.3222 26.6388L28.4071 28.6206L23.897 48.1192L21.9151 28.2042L2.41653 23.694L22.3316 21.7122L26.8417 2.21357Z"
-            fill="white" />
-          <defs>
-            <linearGradient id="paint0_linear_1_899" x1="23" y1="0" x2="23" y2="46" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" />
-              <stop offset="1" stop-color="white" stop-opacity="0" />
-            </linearGradient>
-          </defs>
+          <svg class="team__run-string-svg">
+            <use xlink:href="./sprite.svg#text-decor-second"></use>
           </svg>
         </span>
+
         <span class="team__run-string-text team__run-string-text_second">CRAFTY METAVERSE
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-            <rect x="0.466966" y="0.530982" width="45" height="45"
-              transform="matrix(0.997949 0.0640157 -0.0640169 0.997949 3.92387 0.712407)" stroke="url(#paint0_linear_1_899)"
-              stroke-opacity="0.2" />
-            <path
-              d="M26.8417 2.21357L28.8236 22.1286L48.3222 26.6388L28.4071 28.6206L23.897 48.1192L21.9151 28.2042L2.41653 23.694L22.3316 21.7122L26.8417 2.21357Z"
-              fill="white" />
-            <defs>
-              <linearGradient id="paint0_linear_1_899" x1="23" y1="0" x2="23" y2="46" gradientUnits="userSpaceOnUse">
-                <stop stop-color="white" />
-                <stop offset="1" stop-color="white" stop-opacity="0" />
-              </linearGradient>
-            </defs>
+          <svg class="team__run-string-svg">
+            <use xlink:href="./sprite.svg#text-decor-second"></use>
           </svg>
         </span>
+
         <span class="team__run-string-text team__run-string-text_first">CRAFTY METAVERSE
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-            <rect x="0.466966" y="0.530982" width="45" height="45"
-              transform="matrix(0.997949 0.0640157 -0.0640169 0.997949 3.92387 0.712407)" stroke="url(#paint0_linear_1_899)"
-              stroke-opacity="0.2" />
-            <path
-              d="M26.8417 2.21357L28.8236 22.1286L48.3222 26.6388L28.4071 28.6206L23.897 48.1192L21.9151 28.2042L2.41653 23.694L22.3316 21.7122L26.8417 2.21357Z"
-              fill="white" />
-            <defs>
-              <linearGradient id="paint0_linear_1_899" x1="23" y1="0" x2="23" y2="46" gradientUnits="userSpaceOnUse">
-                <stop stop-color="white" />
-                <stop offset="1" stop-color="white" stop-opacity="0" />
-              </linearGradient>
-            </defs>
+          <svg class="team__run-string-svg">
+            <use xlink:href="./sprite.svg#text-decor-second"></use>
           </svg>
         </span>
+        
         <span class="team__run-string-text team__run-string-text_second">CRAFTY METAVERSE
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-            <rect x="0.466966" y="0.530982" width="45" height="45"
-              transform="matrix(0.997949 0.0640157 -0.0640169 0.997949 3.92387 0.712407)" stroke="url(#paint0_linear_1_899)"
-              stroke-opacity="0.2" />
-            <path
-              d="M26.8417 2.21357L28.8236 22.1286L48.3222 26.6388L28.4071 28.6206L23.897 48.1192L21.9151 28.2042L2.41653 23.694L22.3316 21.7122L26.8417 2.21357Z"
-              fill="white" />
-            <defs>
-              <linearGradient id="paint0_linear_1_899" x1="23" y1="0" x2="23" y2="46" gradientUnits="userSpaceOnUse">
-                <stop stop-color="white" />
-                <stop offset="1" stop-color="white" stop-opacity="0" />
-              </linearGradient>
-            </defs>
+          <svg class="team__run-string-svg">
+            <use xlink:href="./sprite.svg#text-decor-second"></use>
           </svg>
         </span>
       </div>

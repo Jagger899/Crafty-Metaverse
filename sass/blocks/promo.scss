@@ -118,6 +118,16 @@
     }
   }
 
+  &__title-img {
+    width: 46px;
+    height: 46px;
+
+    @include media-breakpoint-down(xs) {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
   &__title-dec-second {
     display: none;
 

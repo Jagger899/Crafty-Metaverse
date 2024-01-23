@@ -253,6 +253,8 @@
   }
   
   &__dropdown-arrow {
+    width: 15px;
+    height: 9px;
     transition: transform 300ms linear;
     &_rotate {
       transform: rotate(180deg);

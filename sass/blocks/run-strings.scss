@@ -131,13 +131,15 @@
     left: -40px;
   }
 
-  &__bottom-box svg {
-    transform: rotate(9.09deg);
-
-    @include media-breakpoint-down(xs) {
-      width: 18px;
-      height: 18px;
-    }
+  &__bottom-svg {
+    width: 46px;
+    height: 46px;
+    transform: rotate(-9.09deg);
+    
+      @include media-breakpoint-down(xs) {
+        width: 18px;
+        height: 18px;
+      }
   }
 
   &__bottom-content {

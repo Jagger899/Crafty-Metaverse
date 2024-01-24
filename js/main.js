@@ -43,7 +43,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
-const swiper = new Swiper('.about-us__slider', {
+const swiper1 = new Swiper('.about-us__slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
@@ -117,6 +117,25 @@ accordeonButtons.forEach(function (accordeonButton) {
       accordeonButton.classList.remove('accordeon__button_active')
     }
   })
+});
+
+const swiper2 = new Swiper('.social__slider', {
+  // Optional parameters
+  // direction: 'horizontal',
+  // loop: true,
+  // grabCursor: true,
+  slidesPerView: 4,
+  breakpoints: {
+    0: {
+    slidesPerView: 1.2,
+    },
+
+    1100: {
+      enabled: false,
+      slidesPerView: 4,
+    },
+  },
+
 });
 
 

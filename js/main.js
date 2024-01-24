@@ -13,9 +13,8 @@ const dropTextFirst = document.getElementById('roadmap__dropdown-text-first');
 const dropButtonSecond = document.getElementById('roadmap__dropdown-button-second');
 const dropTextSecond = document.getElementById('roadmap__dropdown-text-second');
 
-const roadmapArrowFirst = document.getElementsByClassName('roadmap__dropdown-arrow');
-console.log(roadmapArrowFirst);
-// const roadmapArrowSecond = document.getElementsByClassName('roadmap-arrow-second');
+const roadmapArrow = document.getElementsByClassName('roadmap__dropdown-arrow');
+console.log(roadmapArrow);
 
 menuOpen.addEventListener('click', function (event) {
   event.preventDefault();
@@ -37,7 +36,6 @@ menuOpen.addEventListener('click', function (event) {
 });
 
 window.addEventListener('scroll', function () {
-
   if (this.window.scrollY > 0) {
     header.classList.add('header_fixed');
   } else {
@@ -71,7 +69,7 @@ const swiper = new Swiper('.about-us__slider', {
 
 dropButtonFirst.addEventListener('click', function () {
   let currentElement = dropButtonFirst.nextElementSibling;
-  roadmapArrowFirst[0].classList.toggle('roadmap__dropdown-arrow_rotate')
+  roadmapArrow[0].classList.toggle('roadmap__dropdown-arrow_rotate')
 
   if (window.innerWidth >= 1313 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
     currentElement.classList.add('roadmap__dropdown-text_visible');
@@ -82,12 +80,11 @@ dropButtonFirst.addEventListener('click', function () {
     currentElement.classList.remove('roadmap__dropdown-text_visible');
     currentElement.style.maxHeight = null;
   }
-
 })
 
 dropButtonSecond.addEventListener('click', function () {
   let currentElement = dropButtonSecond.nextElementSibling;
-  roadmapArrowFirst[1].classList.toggle('roadmap__dropdown-arrow_rotate');
+  roadmapArrow[1].classList.toggle('roadmap__dropdown-arrow_rotate');
 
   if (window.innerWidth >= 1295 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
     currentElement.classList.add('roadmap__dropdown-text_visible');
@@ -99,4 +96,27 @@ dropButtonSecond.addEventListener('click', function () {
     currentElement.style.maxHeight = null;
   }
 })
+
+const accordeonButtons = document.querySelectorAll('.accordeon__button');
+const accordeonText = document.querySelectorAll('.accordeon__text-box');
+const accordeonButtonsSvg = document.querySelectorAll('.accordeon__button-svg');
+
+accordeonButtons.forEach(function (accordeonButton) {
+  accordeonButton.addEventListener('click', function () {
+    let currentElement = accordeonButton.nextElementSibling;
+
+    if (!currentElement.classList.contains('accordeon__text-box_visible')) {
+      currentElement.classList.add('accordeon__text-box_visible');
+      currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
+      accordeonButton.childNodes[1].classList.add('accordeon__button-svg_rotate');
+      accordeonButton.classList.add('accordeon__button_active')
+    } else {
+      currentElement.classList.remove('accordeon__text-box_visible');
+      currentElement.style.maxHeight = null;
+      accordeonButton.childNodes[1].classList.remove('accordeon__button-svg_rotate');
+      accordeonButton.classList.remove('accordeon__button_active')
+    }
+  })
+});
+
 

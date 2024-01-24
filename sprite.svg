@@ -137,6 +137,11 @@
         </linearGradient>
       </defs>
     </symbol>
+
+    <symbol xmlns="http://www.w3.org/2000/svg" id="accordeon-svg" viewBox="0 0 34 34" fill="none">
+      <path d="M17 2V32" stroke="white" stroke-width="4" stroke-linecap="round" />
+      <path d="M2 17L32 17" stroke="white" stroke-width="4" stroke-linecap="round" />
+    </symbol>
 </svg>
 
 <svg>

@@ -1,6 +1,11 @@
 .social {
-  padding: 140px 0 153px;
+  padding: 140px 0 443px;
   position: relative;
+
+  @include media-breakpoint-down(xs) {
+    padding-top: 46px;
+    padding-bottom: 67px;
+  }
 
   &__bg {
     position: absolute;
@@ -14,16 +19,33 @@
 
   &__container {
     position: relative;
+
+    @include media-breakpoint-down(lg) {
+      padding-right: 0;
+    }
+
+    @include media-breakpoint-down(xs) {
+      padding-left: 30px;
+    }
   }
 
   &__subtitle {
     margin-left:12px;
     margin-bottom: 16px;
+
+    @include media-breakpoint-down(xs) {
+      margin-left: -11px;
+    }
   }
 
   &__title {
     margin-left: 12px;
     margin-bottom: 80px;
+
+    @include media-breakpoint-down(xs) {
+      margin-right: 22px;
+      margin-bottom: 48px;
+    }
   }
 
   &__slider {
@@ -42,14 +64,34 @@
     &_first {
       top: -10px;
       left: 30px;
+
+      @include media-breakpoint-down(xs) {
+        top: 0;
+        left: 0;
+      }
     }
 
     &_second {
       left:19px;
+      @include media-breakpoint-down(xs) {
+        top: 6px;
+        left: 0;
+      }
     }
 
     &_third {
       left:10px;
+
+      @include media-breakpoint-down(xs) {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &__slider-img {
+    @include media-breakpoint-down(sm) {
+      width: 203px;
     }
   }
 

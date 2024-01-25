@@ -120,14 +120,24 @@ accordeonButtons.forEach(function (accordeonButton) {
 });
 
 const swiper2 = new Swiper('.social__slider', {
-  // Optional parameters
-  // direction: 'horizontal',
-  // loop: true,
-  // grabCursor: true,
-  slidesPerView: 4,
+  // slidesPerView: 4,
   breakpoints: {
     0: {
-    slidesPerView: 1.2,
+      slidesPerView: 1.95,
+      spaceBetween:50,
+    },
+
+    480: {
+      slidesPerView: 2.5,
+      spaceBetween:20,
+    },
+
+    600: {
+      slidesPerView:2.8,
+    },
+
+    700: {
+      slidesPerView:2.7,
     },
 
     1100: {

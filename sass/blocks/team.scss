@@ -59,13 +59,6 @@
     padding-right: 80px;
     position: relative;
 
-    // @include media-breakpoint-down(l) {
-    //   padding-right: 0;
-    //   flex-wrap: wrap;
-    //   align-items: center;
-    //   justify-content: space-evenly;
-    // }
-
     @include media-breakpoint-down(l) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -224,7 +217,6 @@
     z-index: -2;
     background: rgba(0, 0, 0, 0.20);
     mix-blend-mode: color-dodge;
-    // backdrop-filter: blur(50px);;
   }
 
   &__card {
@@ -254,7 +246,6 @@
     }
 
     &_third {
-      // margin-bottom: 29px;
       top:143px;
       right: 24px;
 
@@ -431,6 +422,8 @@
     width: 120%;
     flex-wrap: nowrap;
     transform: rotate(6.016deg);
+    position: relative;
+    left: -20px;
   }
 
   &__run-string-text {

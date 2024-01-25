@@ -28,6 +28,7 @@ body {
   position: relative;
   // z-index: 2;
   background-color: #090812;
+  scroll-behavior: smooth;
 }
 
 [class*=__container] {

@@ -1,23 +1,20 @@
 const body = document.querySelector('.body');
 const header = document.getElementById('header');
 
-const mobileMenu = document.getElementById('header__mobile-menu');
+const mobileMenu = document.getElementById('mobile-menu');
 const menuOpen = document.getElementById('mobile-menu-open');
-
 const firstLine = document.getElementById('first-line');
 const secondLine = document.getElementById('second-line');
 const thirdLine = document.getElementById('third-line');
 
-const dropButtonFirst = document.getElementById('roadmap__dropdown-button-first');
-const dropTextFirst = document.getElementById('roadmap__dropdown-text-first');
-const dropButtonSecond = document.getElementById('roadmap__dropdown-button-second');
-const dropTextSecond = document.getElementById('roadmap__dropdown-text-second');
+const dropButtonFirst = document.getElementById('roadmapDropFirstBtn');
+// const dropTextFirst = document.getElementById('roadmap__dropdown-text-first');
+const dropButtonSecond = document.getElementById('roadmapDropSecondBtn');
+// const dropTextSecond = document.getElementById('roadmap__dropdown-text-second');
 
 const roadmapArrow = document.getElementsByClassName('roadmap__dropdown-arrow');
-console.log(roadmapArrow);
 
-menuOpen.addEventListener('click', function (event) {
-  event.preventDefault();
+menuOpen.addEventListener('click', function () {
   mobileMenu.classList.toggle('header__mobile-menu_active');
 
   if (mobileMenu.classList.contains('header__mobile-menu_active')) {
@@ -36,7 +33,7 @@ menuOpen.addEventListener('click', function (event) {
 });
 
 window.addEventListener('scroll', function () {
-  if (this.window.scrollY > 0) {
+ if (this.window.scrollY > 0) {
     header.classList.add('header_fixed');
   } else {
     header.classList.remove('header_fixed');
@@ -145,7 +142,6 @@ const swiper2 = new Swiper('.social__slider', {
       slidesPerView: 4,
     },
   },
-
 });
 
 

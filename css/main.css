@@ -194,6 +194,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #090812;
+  scroll-behavior: smooth;
 }
 
 [class*=__container] {
@@ -298,6 +299,9 @@ main {
   width: 28px;
   height: 28px;
 }
+.header__logo-svg_mobile {
+  display: none;
+}
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -345,8 +349,10 @@ main {
   color: rgba(255, 255, 255, 0.7);
   transition: color 300ms linear;
 }
-.header__link:hover {
-  color: #fff;
+@media (min-width: 1024px) {
+  .header__link:hover {
+    color: #fff;
+  }
 }
 @media (max-width: 1024px) {
   .header__link {
@@ -405,13 +411,13 @@ main {
     left: 0;
     background-color: #000;
     top: 0;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../images/header/header-mobile-bg.jpg");
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/header/header-mob-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     transform: translateY(120%);
     transition: transform 500ms linear;
-    z-index: 8;
+    z-index: 4;
   }
   .header__mobile-menu_active {
     transform: translateY(0);
@@ -420,14 +426,16 @@ main {
 .header__mobile-menu-box {
   position: relative;
   width: 100%;
-  height: 100%;
-  padding: 143px 20px 100px;
+  height: fit-content;
+  padding: 20px;
+  overflow: auto;
+  position: relative;
 }
 .header__mobile-menu-list {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  height: fit-content;
+  margin-top: 143px;
 }
 .header__mobile-menu-link {
   color: rgba(255, 255, 255, 0.7);
@@ -4113,6 +4121,8 @@ main {
   width: 120%;
   flex-wrap: nowrap;
   transform: rotate(6.016deg);
+  position: relative;
+  left: -20px;
 }
 .team__run-string-text {
   display: flex;

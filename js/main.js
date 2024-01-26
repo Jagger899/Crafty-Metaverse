@@ -7,12 +7,15 @@ const firstLine = document.getElementById('first-line');
 const secondLine = document.getElementById('second-line');
 const thirdLine = document.getElementById('third-line');
 
-const dropButtonFirst = document.getElementById('roadmapDropFirstBtn');
-// const dropTextFirst = document.getElementById('roadmap__dropdown-text-first');
-const dropButtonSecond = document.getElementById('roadmapDropSecondBtn');
-// const dropTextSecond = document.getElementById('roadmap__dropdown-text-second');
-
+// const dropButtonFirst = document.getElementById('roadmapDropFirstBtn');
+// const dropButtonSecond = document.getElementById('roadmapDropSecondBtn');
+const dropButton = document.querySelectorAll('.roadmap__dropdown-button');
 const roadmapArrow = document.getElementsByClassName('roadmap__dropdown-arrow');
+
+const accordeonButtons = document.querySelectorAll('.accordeon__button');
+const accordeonText = document.querySelectorAll('.accordeon__text-box');
+const accordeonButtonsSvg = document.querySelectorAll('.accordeon__button-svg');
+// const accordeonButton = document.querySelector('.accordeon__button');
 
 menuOpen.addEventListener('click', function () {
   mobileMenu.classList.toggle('header__mobile-menu_active');
@@ -41,13 +44,11 @@ window.addEventListener('scroll', function () {
 });
 
 const swiper1 = new Swiper('.about-us__slider', {
-  // Optional parameters
   direction: 'horizontal',
   loop: false,
   grabCursor: true,
   slidesPerView: 1,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
@@ -57,67 +58,117 @@ const swiper1 = new Swiper('.about-us__slider', {
         '<span class="' + total + '"></span>'
     }
   },
-  // And if we need scrollbar
+
   scrollbar: {
     el: '.swiper-scrollbar',
   },
 });
 
 
-dropButtonFirst.addEventListener('click', function () {
-  let currentElement = dropButtonFirst.nextElementSibling;
-  roadmapArrow[0].classList.toggle('roadmap__dropdown-arrow_rotate')
+// dropButtonFirst.addEventListener('click', function () {
+//   let currentElement = dropButtonFirst.nextElementSibling;
+//   roadmapArrow[0].classList.toggle('roadmap__dropdown-arrow_rotate')
 
-  if (window.innerWidth >= 1313 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-    currentElement.classList.add('roadmap__dropdown-text_visible');
-  } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+//   if (window.innerWidth >= 1313 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+//     currentElement.classList.add('roadmap__dropdown-text_visible');
+//   } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+//       currentElement.classList.add('roadmap__dropdown-text_visible');
+//       currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
+//   } else {
+//     currentElement.classList.remove('roadmap__dropdown-text_visible');
+//     currentElement.style.maxHeight = null;
+//   }
+// })
+
+// dropButtonSecond.addEventListener('click', function () {
+//   let currentElement = dropButtonSecond.nextElementSibling;
+//   roadmapArrow[1].classList.toggle('roadmap__dropdown-arrow_rotate');
+
+//   if (window.innerWidth >= 1295 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+//     currentElement.classList.add('roadmap__dropdown-text_visible');
+//   } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+//       currentElement.classList.add('roadmap__dropdown-text_visible');
+//       currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
+//   } else {
+//     currentElement.classList.remove('roadmap__dropdown-text_visible');
+//     currentElement.style.maxHeight = null;
+//   }
+// })
+
+dropButton.forEach(function (button) {
+  let currentElement = button.nextElementSibling;
+
+  button.addEventListener('click', function () {
+    console.log(button.childNodes)
+    if (window.innerWidth >= 1315 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+      currentElement.classList.add('roadmap__dropdown-text_visible');
+      button.childNodes[1].classList.add('roadmap__dropdown-arrow_rotate');
+    } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
       currentElement.classList.add('roadmap__dropdown-text_visible');
       currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
-  } else {
-    currentElement.classList.remove('roadmap__dropdown-text_visible');
-    currentElement.style.maxHeight = null;
-  }
-})
-
-dropButtonSecond.addEventListener('click', function () {
-  let currentElement = dropButtonSecond.nextElementSibling;
-  roadmapArrow[1].classList.toggle('roadmap__dropdown-arrow_rotate');
-
-  if (window.innerWidth >= 1295 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-    currentElement.classList.add('roadmap__dropdown-text_visible');
-  } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-      currentElement.classList.add('roadmap__dropdown-text_visible');
-      currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
-  } else {
-    currentElement.classList.remove('roadmap__dropdown-text_visible');
-    currentElement.style.maxHeight = null;
-  }
-})
-
-const accordeonButtons = document.querySelectorAll('.accordeon__button');
-const accordeonText = document.querySelectorAll('.accordeon__text-box');
-const accordeonButtonsSvg = document.querySelectorAll('.accordeon__button-svg');
-
-accordeonButtons.forEach(function (accordeonButton) {
-  accordeonButton.addEventListener('click', function () {
-    let currentElement = accordeonButton.nextElementSibling;
-
-    if (!currentElement.classList.contains('accordeon__text-box_visible')) {
-      currentElement.classList.add('accordeon__text-box_visible');
-      currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
-      accordeonButton.childNodes[1].classList.add('accordeon__button-svg_rotate');
-      accordeonButton.classList.add('accordeon__button_active')
+      button.childNodes[1].classList.add('roadmap__dropdown-arrow_rotate');
     } else {
-      currentElement.classList.remove('accordeon__text-box_visible');
+      currentElement.classList.remove('roadmap__dropdown-text_visible');
       currentElement.style.maxHeight = null;
-      accordeonButton.childNodes[1].classList.remove('accordeon__button-svg_rotate');
-      accordeonButton.classList.remove('accordeon__button_active')
-    }
-  })
+      button.childNodes[1].classList.remove('roadmap__dropdown-arrow_rotate');
+    };
+  });
 });
 
+
+
+
+
+// accordeonButtons.forEach(function (accordeonButton) {
+//   accordeonButton.addEventListener('click', function () {
+//     let currentElement = accordeonButton.nextElementSibling;
+
+//     if (!currentElement.classList.contains('accordeon__text-box_visible')) {
+//       for (text of accordeonText) {
+//         text.classList.remove('accordeon__text-box_visible');
+//         text.style.maxHeight = null;
+//       }
+//       currentElement.classList.add('accordeon__text-box_visible');
+//       currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
+//       accordeonButton.childNodes[1].classList.add('accordeon__button-svg_rotate');
+//       accordeonButton.classList.add('accordeon__button_active')
+//     } else {
+//       currentElement.classList.remove('accordeon__text-box_visible');
+//       currentElement.style.maxHeight = null;
+//       accordeonButton.childNodes[1].classList.remove('accordeon__button-svg_rotate');
+//       accordeonButton.classList.remove('accordeon__button_active')
+//     }
+//   })
+// });
+
+accordeonButtons.forEach(function (button) {
+  button.addEventListener('click', function () {
+    let currentElement = button.nextElementSibling;
+
+    if (!currentElement.classList.contains('accordeon__text-box_visible')) {
+      for (const text of accordeonText) {
+        text.classList.remove('accordeon__text-box_visible');
+        text.style.maxHeight = null;
+        // button.childNodes[1].classList.toggle('accordeon__button-svg_rotate');
+      }
+
+      for (const svg of accordeonButtonsSvg) {
+        svg.classList.remove('accordeon__button-svg_rotate');
+      }
+
+      currentElement.classList.add('accordeon__text-box_visible');
+      currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
+      button.childNodes[1].classList.toggle('accordeon__button-svg_rotate');
+      button.classList.add('accordeon__button_active');
+    }
+
+  });
+});
+
+accordeonButtons[0].click();
+
 const swiper2 = new Swiper('.social__slider', {
-  // slidesPerView: 4,
+  slidesPerView: 4,
   breakpoints: {
     0: {
       slidesPerView: 1.95,
@@ -126,7 +177,7 @@ const swiper2 = new Swiper('.social__slider', {
 
     480: {
       slidesPerView: 2.5,
-      spaceBetween:20,
+      spaceBetween: 10,
     },
 
     600: {
@@ -134,7 +185,8 @@ const swiper2 = new Swiper('.social__slider', {
     },
 
     700: {
-      slidesPerView:2.7,
+      slidesPerView: 2.7,
+      spaceBetween:0,
     },
 
     1100: {

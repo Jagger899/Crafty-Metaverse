@@ -1187,7 +1187,7 @@ main {
 .roadmap__dropdown-text {
   max-height: 0;
   opacity: 0;
-  transition: opacity 300ms linear;
+  transition: opacity 300ms linear, max-height 200ms linear;
 }
 .roadmap__dropdown-text_visible {
   opacity: 1;
@@ -4254,7 +4254,6 @@ main {
     max-width: 350px;
     clip-path: polygon(9% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 3%);
     padding: 1px;
-    margin-left: 7px;
   }
 }
 .faq__inner {

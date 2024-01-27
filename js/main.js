@@ -7,15 +7,13 @@ const firstLine = document.getElementById('first-line');
 const secondLine = document.getElementById('second-line');
 const thirdLine = document.getElementById('third-line');
 
-// const dropButtonFirst = document.getElementById('roadmapDropFirstBtn');
-// const dropButtonSecond = document.getElementById('roadmapDropSecondBtn');
 const dropButton = document.querySelectorAll('.roadmap__dropdown-button');
 const roadmapArrow = document.getElementsByClassName('roadmap__dropdown-arrow');
 
 const accordeonButtons = document.querySelectorAll('.accordeon__button');
 const accordeonText = document.querySelectorAll('.accordeon__text-box');
 const accordeonButtonsSvg = document.querySelectorAll('.accordeon__button-svg');
-// const accordeonButton = document.querySelector('.accordeon__button');
+
 
 menuOpen.addEventListener('click', function () {
   mobileMenu.classList.toggle('header__mobile-menu_active');
@@ -65,36 +63,6 @@ const swiper1 = new Swiper('.about-us__slider', {
 });
 
 
-// dropButtonFirst.addEventListener('click', function () {
-//   let currentElement = dropButtonFirst.nextElementSibling;
-//   roadmapArrow[0].classList.toggle('roadmap__dropdown-arrow_rotate')
-
-//   if (window.innerWidth >= 1313 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-//     currentElement.classList.add('roadmap__dropdown-text_visible');
-//   } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-//       currentElement.classList.add('roadmap__dropdown-text_visible');
-//       currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
-//   } else {
-//     currentElement.classList.remove('roadmap__dropdown-text_visible');
-//     currentElement.style.maxHeight = null;
-//   }
-// })
-
-// dropButtonSecond.addEventListener('click', function () {
-//   let currentElement = dropButtonSecond.nextElementSibling;
-//   roadmapArrow[1].classList.toggle('roadmap__dropdown-arrow_rotate');
-
-//   if (window.innerWidth >= 1295 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-//     currentElement.classList.add('roadmap__dropdown-text_visible');
-//   } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
-//       currentElement.classList.add('roadmap__dropdown-text_visible');
-//       currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
-//   } else {
-//     currentElement.classList.remove('roadmap__dropdown-text_visible');
-//     currentElement.style.maxHeight = null;
-//   }
-// })
-
 dropButton.forEach(function (button) {
   let currentElement = button.nextElementSibling;
 
@@ -114,32 +82,6 @@ dropButton.forEach(function (button) {
     };
   });
 });
-
-
-
-
-
-// accordeonButtons.forEach(function (accordeonButton) {
-//   accordeonButton.addEventListener('click', function () {
-//     let currentElement = accordeonButton.nextElementSibling;
-
-//     if (!currentElement.classList.contains('accordeon__text-box_visible')) {
-//       for (text of accordeonText) {
-//         text.classList.remove('accordeon__text-box_visible');
-//         text.style.maxHeight = null;
-//       }
-//       currentElement.classList.add('accordeon__text-box_visible');
-//       currentElement.style.maxHeight = currentElement.scrollHeight + 'px';
-//       accordeonButton.childNodes[1].classList.add('accordeon__button-svg_rotate');
-//       accordeonButton.classList.add('accordeon__button_active')
-//     } else {
-//       currentElement.classList.remove('accordeon__text-box_visible');
-//       currentElement.style.maxHeight = null;
-//       accordeonButton.childNodes[1].classList.remove('accordeon__button-svg_rotate');
-//       accordeonButton.classList.remove('accordeon__button_active')
-//     }
-//   })
-// });
 
 accordeonButtons.forEach(function (button) {
   button.addEventListener('click', function () {

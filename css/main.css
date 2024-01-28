@@ -185,6 +185,10 @@ ul {
   font-family: "Mandatory", sans-serif;
   src: url("../fonts/MandatoryPlaything.otf");
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   color: #fff;
@@ -1210,15 +1214,6 @@ main {
   align-items: center;
   border-radius: 50%;
 }
-.roadmap__point_fourth {
-  border-color: #496ab0;
-  background: linear-gradient(45deg, rgba(30, 20, 41, 0.6431372549), rgba(34, 35, 102, 0.651));
-}
-@media (max-width: 375px) {
-  .roadmap__point_fourth {
-    background-image: none;
-  }
-}
 .roadmap__point-box_first .roadmap__point-first {
   width: 50px;
   height: 50px;
@@ -1674,10 +1669,11 @@ main {
   width: 50px;
   height: 50px;
   z-index: -1;
+  box-shadow: 0 0 5px 5px #fff;
   background-color: #fff;
-  box-shadow: 0 0 30px 10px #fff;
   mix-blend-mode: color-dodge;
   backdrop-filter: blur(18.5px);
+  opacity: 0.8;
 }
 @media (max-width: 375px) {
   .roadmap__point-box_fourth .roadmap__point-first {
@@ -1689,10 +1685,9 @@ main {
   width: 62px;
   height: 62px;
   z-index: -2;
-  background-image: linear-gradient(45deg, rgba(120, 197, 255, 0.8274509804), rgba(25, 156, 189, 0.863));
-  border: 1px solid #fff;
+  background: rgb(126, 236, 255);
+  animation: pulsing 1000ms infinite linear;
   mix-blend-mode: color-dodge;
-  filter: blur(100px);
 }
 @media (max-width: 375px) {
   .roadmap__point-box_fourth .roadmap__point-second {
@@ -1704,10 +1699,10 @@ main {
   width: 76px;
   height: 76px;
   z-index: -3;
+  background: rgb(30, 82, 159);
   mix-blend-mode: lighten;
-  border-color: rgba(17, 94, 128, 0.796);
-  background-image: linear-gradient(-45deg, rgba(48, 204, 231, 0.796), rgba(35, 141, 174, 0.7725490196));
-  border: 1px solid #ffb6ff;
+  animation: pulsing 1000ms infinite linear;
+  opacity: 0.6;
 }
 @media (max-width: 375px) {
   .roadmap__point-box_fourth .roadmap__point-third {
@@ -1719,29 +1714,13 @@ main {
   width: 107px;
   height: 107px;
   z-index: -4;
-  border-color: rgba(67, 164, 255, 0.7803921569);
-  background-image: linear-gradient(-45deg, rgba(33, 192, 255, 0.7882352941), rgba(16, 128, 172, 0.8));
-  border: 1px solid #ffb6ff;
+  opacity: 0.6;
+  background: rgb(22, 71, 129);
   mix-blend-mode: color-dodge;
+  animation: pulsing 1000ms infinite linear;
 }
 @media (max-width: 375px) {
   .roadmap__point-box_fourth .roadmap__point-fourth {
-    width: 60px;
-    height: 60px;
-  }
-}
-.roadmap__point-box_fourth .roadmap__point-fivth {
-  width: 107px;
-  height: 107px;
-  z-index: -5;
-  border: 1px solid;
-  border-color: rgba(67, 164, 255, 0.7803921569);
-  background-image: linear-gradient(-45deg, rgba(33, 192, 255, 0.7882352941), rgba(16, 128, 172, 0.8));
-  border-color: #4b99ff;
-  filter: blur(50px);
-}
-@media (max-width: 375px) {
-  .roadmap__point-box_fourth .roadmap__point-fivth {
     width: 60px;
     height: 60px;
   }
@@ -1750,8 +1729,9 @@ main {
   width: 134px;
   height: 134px;
   z-index: -6;
-  border-color: rgba(62, 158, 255, 0.7882352941);
-  background-image: linear-gradient(-45deg, #1826a7, rgba(25, 118, 172, 0.8784313725));
+  background-color: rgb(15, 61, 87);
+  animation: pulsing 1000ms infinite linear;
+  opacity: 0.6;
 }
 @media (max-width: 375px) {
   .roadmap__point-box_fourth .roadmap__point-sixth {

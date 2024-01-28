@@ -18,6 +18,10 @@
   src: url("../fonts/MandatoryPlaything.otf");
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   color: #fff;

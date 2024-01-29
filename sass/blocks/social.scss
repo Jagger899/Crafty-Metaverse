@@ -1,5 +1,5 @@
 .social {
-  padding: 140px 0 443px;
+  padding: 140px 0 450px;
   position: relative;
 
   @include media-breakpoint-down(xs) {
@@ -31,19 +31,20 @@
 
   &__subtitle {
     margin-left:12px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 
     @include media-breakpoint-down(xs) {
-      margin-left: -11px;
+      margin-left: -24px;
+      margin-bottom: 15px;
     }
   }
 
   &__title {
-    margin-left: 12px;
+    margin-left: 18px;
     margin-bottom: 80px;
 
     @include media-breakpoint-down(xs) {
-      margin-right: 22px;
+      margin-right: 44px;
       margin-bottom: 48px;
     }
   }

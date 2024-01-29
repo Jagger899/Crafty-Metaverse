@@ -1,5 +1,5 @@
 .explore {
-  padding: 277px 0 196px;
+  padding: 280px 0 202px;
   position: relative;
   z-index: 4;
 
@@ -13,11 +13,11 @@
 
   @include media-breakpoint-down(xs) {
     padding: 27px 0 50px;
-    margin-bottom: 400px;
+    margin-bottom: 294px;
   }
 
-  @include media-breakpoint-down(xxs) {
-    margin-bottom: 294px;
+  &__container {
+    max-width: 1670px;
   }
 
   &__inner {
@@ -72,14 +72,10 @@
       transform: translateY(50%);
 
       @include media-breakpoint-down(xs) {
-        right: 0;
-        bottom: 100px;
+        right: 33px;
+        bottom: 54px;
       }
 
-      @include media-breakpoint-down(xxs) {
-        right: 20px;
-        bottom: 51px;
-      }
     }
 
     @include media-breakpoint-down(l) {
@@ -125,7 +121,7 @@
 
     @include media-breakpoint-down(xs) {
       margin-left: 22px;
-      margin-bottom: 37px;
+      margin-bottom: 30px;
     }
   }
 
@@ -185,8 +181,8 @@
       }
 
       @include media-breakpoint-down(xs) {
-        margin: 0 0 0 26px;
-        padding-bottom: 0;
+        margin: 0 0 0 23px;
+        
       }
   }
 
@@ -279,11 +275,8 @@
     @include media-breakpoint-down(xs) {
       width: 330px;
       height: 461px;
-    }
-
-    @include media-breakpoint-down(xxs) {
-      top: 33px;
-      left: 17px;
+      top: 30px;
+      left: 10px;
     }
   }
 

@@ -35,12 +35,9 @@
     }
 
     @include media-breakpoint-down(xs) {
-      margin-bottom: 15px;
-    }
-
-    @include media-breakpoint-down(xxs) {
       margin-bottom: 5px;
     }
+
   }
 
   &__top-bg {
@@ -114,10 +111,6 @@
     }
 
     @include media-breakpoint-down(xs) {
-      font-size: 60px;
-    }
-
-    @include media-breakpoint-down(xxs) {
       font-size: 52px;
     }
   }
@@ -183,12 +176,9 @@
     }
 
     @include media-breakpoint-down(xs) {
-      font-size: 22px;
-    }
-
-    @include media-breakpoint-down(xxs) {
       font-size: 19px;
     }
+
   }
 
   @keyframes second-run {
@@ -235,10 +225,6 @@
     }
   
     @include media-breakpoint-down(xs) {
-      font-size: 22px;
-    }
-  
-    @include media-breakpoint-down(xxs) {
       font-size: 19px;
     }
   }

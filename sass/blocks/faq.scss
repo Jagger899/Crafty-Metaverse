@@ -40,7 +40,7 @@
   }
 
   &__inner-outside {
-    max-width: 1334px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 4px;
     position: relative;
@@ -199,9 +199,13 @@
   // flex-direction: column;
   // gap: 70px;
 
-  &__item {
-    
-    
+  &__item { 
+  }
+
+  &__content {
+    @include media-breakpoint-down(xs) {
+      padding-right: 10px;
+    }
   }
 
   &__button {
@@ -222,6 +226,7 @@
     position: relative;
     margin-bottom: 30px;
     transition: margin-bottom 300ms linear;
+    cursor: pointer;
 
     @include media-breakpoint-down(xs) {
       margin-bottom: -17px;
@@ -272,7 +277,7 @@
 
     @include media-breakpoint-down(xs) {
       position: relative;
-      top:-5px;
+      top:-8px;
     }
   }
 

@@ -1,5 +1,5 @@
 .brands {
-  padding: 85px 0 135px;
+  padding: 112px 0 135px;
   position: relative;
   overflow: hidden;
   
@@ -29,6 +29,10 @@
     }
   }
 
+  &__container {
+    max-width: 1670px;
+  }
+
   &__subtitle {
     margin-bottom: 21px;
     margin-left:48px;
@@ -37,9 +41,9 @@
         margin-left: 0;
     }
 
-    @include media-breakpoint-down(xxs) {
-      margin-left: 17px;
-      margin-bottom: 16px;
+    @include media-breakpoint-down(xs) {
+      margin-left: 3px;
+      margin-bottom: 19px;
     }
   }
 
@@ -51,9 +55,9 @@
       margin-left: 0;
     }
 
-    @include media-breakpoint-down(xxs) {
-      margin-left: 17px;
-      margin-bottom: 75px;
+    @include media-breakpoint-down(xs) {
+      margin-left: 2px;
+      margin-bottom: 73px;
     }
   }
 
@@ -62,7 +66,6 @@
     justify-content: space-between;
     padding: 0 126px 0 155px;
     
-
     @include media-breakpoint-down(l) {
       padding: 0;
     }
@@ -90,8 +93,7 @@
     // position: relative;
 
     &:nth-child(2) {
-      @include media-breakpoint-down(xxs) {
-        margin-left: 17px;
+      @include media-breakpoint-down(xs) {
         margin-bottom: 3px;
       }
     }
@@ -99,22 +101,16 @@
     &:nth-child(3) {
       margin-left: 10px;
 
-      @include media-breakpoint-down(xxs) {
-        margin-left: 17px;
+      @include media-breakpoint-down(xs) {
+        margin-left: 0;
       }
     }
 
     &:first-child .brands__card-img {
       margin-bottom: 59px;
 
-      @include media-breakpoint-down(xxs) {
+      @include media-breakpoint-down(xs) {
         margin-bottom: 51px;
-      }
-    }
-
-    &:nth-child(2) .brands__card-title {
-      @include media-breakpoint-down(xxs) {
-        margin-left: 6px;
       }
     }
 
@@ -127,7 +123,7 @@
     &:nth-child(3) .brands__card-title {
       margin-bottom: 30px;
 
-      @include media-breakpoint-down(xxs) {
+      @include media-breakpoint-down(xs) {
         margin-bottom: 17px;
       }
     }
@@ -135,12 +131,6 @@
     @include media-breakpoint-down(xs) {
       max-width: 350px;
     }
-
-    @include media-breakpoint-down(xxs) {
-      margin-left: 12px;
-    }
-
-
   }
 
   &__card-img {

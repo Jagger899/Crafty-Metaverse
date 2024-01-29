@@ -1,17 +1,17 @@
 .promo {
-  padding: 264px 0 264px;
+  padding: 270px 0 264px;
   position: relative;
   overflow: hidden;
 
-  @include media-breakpoint-down(xxs) {
-    padding-top: 208px;
-    padding-bottom: 213px;
+  @include media-breakpoint-down(xs) {
+    padding-top: 213px;
+    padding-bottom: 231px;
   }
 
   &__container {
     position: relative;
-    max-width: 1610px;
-    @include media-breakpoint-down(xxs) {
+    max-width: 1640px;
+    @include media-breakpoint-down(xs) {
       padding-left: 19px;
     }
   }
@@ -43,30 +43,50 @@
     // align-items: center;
     gap: 56px;
     position: relative;
+    padding: 17px 0 19px 60px ;
 
-    @include media-breakpoint-down(xxs) {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 6px;
+      border-radius: 41px;
+      background-color: #7F5CFF;
+      box-shadow: 0px 0px 17px 0px rgba(191, 58, 255, 0.40);
+
+      @include media-breakpoint-down(xs) {
+        width: 5px;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
       gap: 25px;
+      padding-left: 24px;
+      padding-top: 16px;
+      padding-bottom: 33px;
     }
   }
 
-  &__content-line {
-    height: 475px;
-    width: 6px;
-    border-radius: 41px;
-    background-color: #7F5CFF;
-    box-shadow: 0px 0px 17px 0px rgba(191, 58, 255, 0.40);
+  // &__content-line {
+  //   height: 475px;
+  //   width: 6px;
+  //   border-radius: 41px;
+  //   background-color: #7F5CFF;
+  //   box-shadow: 0px 0px 17px 0px rgba(191, 58, 255, 0.40);
 
-    @include media-breakpoint-down(sm) {
-      height: 400px;
-    }
+  //   @include media-breakpoint-down(sm) {
+  //     height: 400px;
+  //   }
 
-    @include media-breakpoint-down(xxs) {
-      height: 341px;
-    }
-  }
+  //   @include media-breakpoint-down(xxs) {
+  //     height: 341px;
+  //   }
+  // }
 
   &__content-inner {
-    padding: 22px 0 19px;
+    // padding: 22px 0 19px;
   }
 
   &__subtitle {
@@ -79,7 +99,7 @@
       font-size: 16px;
     }
 
-    @include media-breakpoint-down(xxs) {
+    @include media-breakpoint-down(xs) {
       margin-bottom: 16px;
     }
   }
@@ -91,6 +111,7 @@
     font-weight: 700;
     margin-bottom: 69px;
     line-height: 140%;
+    letter-spacing: 0.48px;
 
     @include media-breakpoint-down(sm) {
       font-size: 30px;
@@ -99,13 +120,17 @@
 
     @include media-breakpoint-down(xs) {
       font-size: 28px;
-      max-width: 400px;
+      width: 364px;
+      line-height: 140%;
+      margin-bottom: 12px;
+      letter-spacing: 0.26px;
+      font-size: 26px;
     }
 
     @include media-breakpoint-down(xxs) {
-      font-size: 26px;
+      
       max-width: 347px;
-      margin-bottom: 12px;
+      
     }
   }
 
@@ -113,7 +138,7 @@
     position: relative;
       top: 6px;
       margin-left: -8px;
-    @include media-breakpoint-down(xxs) {
+    @include media-breakpoint-down(xs) {
       display: none;
     }
   }
@@ -131,7 +156,7 @@
   &__title-dec-second {
     display: none;
 
-    @include media-breakpoint-down(xxs) {
+    @include media-breakpoint-down(xs) {
       display: inline;
       position: relative;
       top: 3px;
@@ -139,39 +164,49 @@
     }
   }
 
-  &__content-lines-box {
+  &__content-lines-svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     top: 0;
-    left: -120px;
+    left: -4%;
     z-index: -1;
 
-    @include media-breakpoint-down(xxs) {
+    @include media-breakpoint-down(xs) {
       left: 0;
     }
   }
 
-  &__content-lines-svg {
-    max-width: 100%;
+  &__button {
+    @include media-breakpoint-down(xs) {
+      width: 188px;
+    }
+    
   }
+
   &__blur-first {
-    width: 859.184px;
-    height: 372.671px;
+    width: 859px;
+    height: 373px;
     transform: rotate(34.59deg);
     background:  linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-    border-radius: 859.184px;
+    border-radius: 859px;
     opacity: 0.4;
     position: absolute;
     top: -45px;
     left: -148px;
     filter: blur(218px);
     // background-color: red;
-    z-index: -2;
+    z-index: -3;
 
-    @include media-breakpoint-down(xxs) {
+    @include media-breakpoint-down(xs) {
       width: 462.861px;
       height: 200.766px;
       top: -166px;
       left: -250px;
+      filter: blur(117px);
+      // opacity: 1;
+      // background: red;
     }
   }
 

@@ -102,8 +102,8 @@
     transform: rotate(-151deg);
     border-radius: 852px;
     opacity: 0.33;
-    background-color: red;
     background: linear-gradient(96deg, #00DBDE 25.39%, #FC00FF 84.84%);
+    -webkit-filter: blur(218px);
     filter: blur(218px);
     position: absolute;
     top: 50%;
@@ -128,6 +128,7 @@
     border-radius: 604px;
     opacity: 0.6;
     background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    -webkit-filter: blur(218px);
     filter: blur(218px);
   }
 
@@ -142,6 +143,7 @@
     z-index: -4;
     background-color: red;
     background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    -webkit-filter: blur(218px);
     filter: blur(218px);
     z-index: -5;
   }

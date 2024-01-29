@@ -24,8 +24,6 @@
     display: flex;
     padding-left: 15px;
     align-items: center;
-      // background: linear-gradient(180deg, rgba(58, 78, 255, 0.00) 0%, rgba(156, 58, 255, 0.14) 100%);
-      //   backdrop-filter: blur(15px);
 
       @include media-breakpoint-down(lg) {
         flex-direction: column;
@@ -95,16 +93,12 @@
       padding-bottom: 0;
       padding-right: 0;
       padding-left: 0;
-      
       max-width: 353px;
-      
     }
-    // max-width: 1348px;
   }
 
   &__content-box {
     display: flex;
-    // gap: 84px;
     justify-content: space-between;
     gap: 20px;
     align-items: flex-start;
@@ -125,10 +119,6 @@
     }
   }
 
-  &__content-box-left {
-    // width: 410px;
-  }
-
   &__content-title {
     font-family: HeliosExtC;
     font-size: 45px;
@@ -142,7 +132,6 @@
     @include media-breakpoint-down(xs) {
       font-size: 28px;
       margin-bottom: 26px;
-      // text-align: center;
     }
   }
 
@@ -168,7 +157,6 @@
   }
 
   &__content-button {
-    // width: 96px;
     font-size: 18px;
       font-style: normal;
       font-weight: 700;
@@ -182,7 +170,6 @@
 
       @include media-breakpoint-down(xs) {
         margin: 0 0 0 23px;
-        
       }
   }
 
@@ -209,7 +196,6 @@
       top: 0;
       left: 0;
       width: 100%;
-      // height: 100%;
       object-fit: cover;
       z-index: -2;
     }
@@ -221,6 +207,7 @@
     transform: rotate(154.449deg);border-radius: 859.184px;
     opacity: 0.25;
     background: linear-gradient(90deg, #21FCFF 0%, #FD40FF 100%);
+    -webkit-filter: blur(218px);
     filter: blur(218px);
     position: absolute;
     top: 0%;
@@ -230,7 +217,6 @@
     @include media-breakpoint-down(xs) {
       width: 596.453px;
       height: 367.749px;
-      // background: red;
     }
   }
 
@@ -242,20 +228,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    backdrop-filter: blur(15px);z-index: -3;
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
+    z-index: -3;
 
     @include media-breakpoint-down(lg) {
       width: 100%;
     }
 
     @include media-breakpoint-down(xs) {
-      // display: none;
       width: 100%;
       height: 891.034px;
-      // border-radius: 1px;
       background: linear-gradient(60deg, rgba(58, 78, 255, 0.00) 0%, rgba(156, 58, 255, 0.14) 100%);
-      
-      // backdrop-filter: blur(15px);
     }
   }
 

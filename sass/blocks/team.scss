@@ -54,7 +54,6 @@
   &__card-box {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
     margin-bottom: 225px;
     padding-right: 80px;
     position: relative;
@@ -86,6 +85,7 @@
     border-radius: 789px;
     opacity: 0.5;
     background: linear-gradient(0deg, #7476ED 0%, #7476ED 100%);
+    -webkit-filter: blur(218px);
     filter: blur(218px);
     top: -13%;
     left: -35%;
@@ -114,6 +114,7 @@
     opacity: 0.9;
     background: linear-gradient(0deg, #7476ED 0%, #7476ED 100%);
     mix-blend-mode: color-dodge;
+    -webkit-filter: blur(218px);
     filter: blur(218px);
     top: 0%;
     left: 6%;
@@ -127,6 +128,7 @@
       width: 369px;
       height: 498px;
       transform: rotate(23deg);
+      -webkit-filter: blur(111px);
       filter: blur(111px);
       top:4%;
       left:-50%;
@@ -142,6 +144,7 @@
     border-radius: 851.178px;
     opacity: 0.7;
     background: var(--1, linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%));
+    -webkit-filter: blur(218px);
     filter: blur(218px);
     z-index: -5;
 
@@ -167,7 +170,8 @@
       height: 650px;
       opacity: 0.6;
       background: var(--1, linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%));
-      filter: blur(115.30755615234375px);
+      -webkit-filter: blur(115px);
+      filter: blur(115px);
       border-radius: 572px;
       position: absolute;
       right: -25%;
@@ -197,7 +201,8 @@
       background: linear-gradient(0deg, #7476ED 0%, #7476ED 100%);
     
       mix-blend-mode: color-dodge;
-      filter: blur(84.5833969116211px);
+      -webkit-filter: blur(84px);
+      filter: blur(8px);
       z-index: -4;
     }
 
@@ -386,7 +391,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
-    /* 63px */
+    
     text-transform: uppercase;
 
     &_first {

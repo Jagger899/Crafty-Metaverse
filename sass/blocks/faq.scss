@@ -45,10 +45,9 @@
     padding: 4px;
     position: relative;
     background-color: rgba(204, 0, 255, 0.4);
-    // background: linear-gradient(180deg, rgba(58, 78, 255, 0.00) 0%, rgba(156, 58, 255, 0.14) 100%);
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     clip-path: polygon(5% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 4%);
-    // z-index: -4;
 
     @include media-breakpoint-down(lg) {
       max-width: 900px;
@@ -77,12 +76,7 @@
     background: linear-gradient(180deg, rgba(7, 1, 19, 0.6) 0%, rgba(30, 12, 48, 0.7) 100%),url("../images/faq/lines-bg.svg");
     // background: linear-gradient(180deg, rgba(58, 78, 255, 0.00) 0%, rgba(156, 58, 255, 0.14) 100%);
     backdrop-filter: blur(15px);
-    // background-image: url("../images/faq/lines-bg.svg");
     position: relative;
-    // background-color: red;
-    // z-index: -2;
-
-    // background: linear-gradient(180deg, rgba(36, 2, 51, 0.9) 0%, rgba(38, 10, 66, 0.9) 100%);
 
     @include media-breakpoint-down(lg) {
       clip-path: polygon(12% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 6%);
@@ -118,7 +112,6 @@
   }
 
   &__title {
-    // margin-bottom: 16px;
     margin-right: 52px;
     margin-bottom: 84px;
 
@@ -151,6 +144,7 @@
     transform: rotate(-30deg);
     z-index: -3;
     background: linear-gradient(90deg, rgba(0, 219, 222, 0.30) 0%, rgba(252, 0, 255, 0.30) 100%);
+    -webkit-filter: blur(218px);
     filter: blur(218px);
     position: absolute;
     top:-10%;
@@ -171,6 +165,7 @@
     border-radius: 1089px;
     opacity: 0.8;
     background: linear-gradient(90deg, rgba(0, 219, 222, 0.30) 0%, rgba(252, 0, 255, 0.30) 100%);
+    -webkit-filter: blur(218px);
     filter: blur(218px);
     transform: rotate(-30deg);
     position: absolute;
@@ -184,7 +179,7 @@
       border-radius: 724px;
       opacity: 1;
       background: linear-gradient(90deg, rgba(0, 219, 222, 0.30) 0%, rgba(252, 0, 255, 0.30) 100%);
-    
+      -webkit-filter: blur(218px);
       filter: blur(145px);
       bottom: 0%;
       top:70%;
@@ -194,10 +189,6 @@
 }
 
 .accordeon {
-
-  // display: flex;
-  // flex-direction: column;
-  // gap: 70px;
 
   &__item { 
   }
@@ -288,15 +279,14 @@
     transition: opacity 500ms linear,max-height 300ms linear;
 
     @include media-breakpoint-down(md) {
-        // max-width: 600px;
       margin: 0 auto 60px;
     }
 
     &_visible {
       opacity: 1;
       @include media-breakpoint-down(xs) {
-          margin-bottom: 17px;
-        }
+        margin-bottom: 17px;
+      }
     }
   }
 
@@ -305,9 +295,7 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 160%;
-    // margin-bottom: 60px;
     max-width: 1180px;
-    // margin-top: -10px;
 
     @include media-breakpoint-down(sm) {
       font-size: 20px;

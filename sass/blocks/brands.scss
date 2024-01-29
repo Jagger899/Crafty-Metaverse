@@ -24,7 +24,8 @@
 
     &_blue {
       background: linear-gradient(180deg, rgba(36, 10, 92, 0.63) 8.97%, rgba(36, 11, 88, 0.30) 100%);
-      backdrop-filter: blur(150px);
+      -webkit-filter: blur(150px);
+      filter: blur(150px);
       z-index: -9;
     }
   }

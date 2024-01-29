@@ -172,18 +172,22 @@ ul {
 @font-face {
   font-family: "HeliosExtC";
   src: url("../fonts/HeliosExtC-Bold.woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "HeliosBlackC", sans-serif;
   src: url("../fonts/HeliosBlack.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Gilroy", sans-serif;
   src: url("../fonts/Gilroy-Regular.woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "Mandatory", sans-serif;
   src: url("../fonts/MandatoryPlaything.otf");
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
@@ -417,7 +421,7 @@ main {
     left: 0;
     background-color: #000;
     top: 0;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/header/header-mob-bg.jpg");
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/header/header-mob-bg.webp"), url("../images/header/header-mob-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;

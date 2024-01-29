@@ -3,19 +3,23 @@
 @font-face {
   font-family: 'HeliosExtC';
   src: url("../fonts/HeliosExtC-Bold.woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'HeliosBlackC', sans-serif;
   src: url("../fonts/HeliosBlack.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: 'Gilroy', sans-serif;
   src: url("../fonts/Gilroy-Regular.woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: 'Mandatory', sans-serif;
   src: url("../fonts/MandatoryPlaything.otf");
+  font-display: swap;
 }
 
 *{

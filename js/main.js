@@ -22,11 +22,12 @@ const teamRunStringsObserver = new IntersectionObserver(function (entries, obser
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       entry.target.classList.add('team__run-string_animated');
-      observer.unobserve(entry.target);
+      // observer.unobserve(entry.target);
+      console.log(entry)
+    } else {
+      entry.target.classList.remove('team__run-string_animated');
     }
   });
-}, {
-  rootMargin:'200px 0px 0px 100px'
 });
 
 teamRunStringsObserver.observe(teamRunStrings);
@@ -35,7 +36,9 @@ const runStringsObserver = new IntersectionObserver(function (entries, observer)
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       entry.target.classList.add('run-strings_animated');
-      observer.unobserve(entry.target);
+      // observer.unobserve(entry.target);
+    } else {
+      entry.target.classList.remove('run-strings_animated');
     }
   });
 });
@@ -46,8 +49,10 @@ const roadmapsObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       entry.target.classList.add('point-general_animated');
-      observer.unobserve(entry.target);
+      // observer.unobserve(entry.target);
       console.log(entry.target.classList)
+    } else {
+      entry.target.classList.remove('point-general_animated');
     }
   })
 },{
@@ -58,20 +63,20 @@ roadmapPoints.forEach(function (point) {
   return roadmapsObserver.observe(point);
 });
 
-const imageObserver = new IntersectionObserver(function (entries, observer) {
-  entries.forEach(function (entri) {
-    if (entri.isIntersecting) {
-      entri.target.src = entri.target.dataset.src;
-      observer.unobserve(entri.target);
-    }
-  })
-},{
-  rootMargin:'400px 0px 0px 400px'
-});
+// const imageObserver = new IntersectionObserver(function (entries, observer) {
+//   entries.forEach(function (entri) {
+//     if (entri.isIntersecting) {
+//       entri.target.src = entri.target.dataset.src;
+//       observer.unobserve(entri.target);
+//     }
+//   })
+// },{
+//   rootMargin:'400px 0px 0px 400px'
+// });
 
-document.querySelectorAll('img').forEach(function (img) {
-  return imageObserver.observe(img)
-})
+// document.querySelectorAll('img').forEach(function (img) {
+//   return imageObserver.observe(img)
+// })
 
 menuOpen.addEventListener('click', function () {
   mobileMenu.classList.toggle('header__mobile-menu_active');

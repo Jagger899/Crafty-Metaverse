@@ -202,7 +202,7 @@
     
       mix-blend-mode: color-dodge;
       -webkit-filter: blur(84px);
-      filter: blur(8px);
+      filter: blur(84px);
       z-index: -4;
     }
 
@@ -339,8 +339,6 @@
     }
   }
 
-
-
   &__card-socials {
     display: flex;
     align-items: center;
@@ -438,6 +436,10 @@
     left: -20px;
   }
 
+  &__run-string_animated .team__run-string-text {
+    animation: bottom-run 5s infinite linear;
+  }
+
   &__run-string-text {
     display: flex;
     align-items: center;
@@ -449,7 +451,11 @@
     line-height: 140%;
     letter-spacing: 0.72px;
     white-space: nowrap;
-    animation: top-running 5s infinite linear;
+    // animation: bottom-run 5s infinite linear;
+
+    &_animated {
+      animation: bottom-run 5s infinite linear;
+    }
 
     &_first {
       background: var(--2, linear-gradient(90deg, #21FCFF 0%, #FD40FF 100%));
@@ -473,6 +479,16 @@
       font-size: 33px;
     }
 
+  }
+
+  @keyframes bottom-run {
+    0% {
+      transform: translateX(calc(-100% - 1300px));
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
   }
 
   .team__run-string-text svg {

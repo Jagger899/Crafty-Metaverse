@@ -13,6 +13,46 @@ const roadmapArrow = document.getElementsByClassName('roadmap__dropdown-arrow');
 const accordeonButtons = document.querySelectorAll('.accordeon__button');
 const accordeonText = document.querySelectorAll('.accordeon__text-box');
 const accordeonButtonsSvg = document.querySelectorAll('.accordeon__button-svg');
+const roadmapPoints = document.querySelectorAll('.point-general');
+const runStrings = document.querySelector('.run-strings');
+const teamRunStrings = document.querySelector('.team__run-string');
+console.log(teamRunStrings)
+
+const teamRunStringsObserver = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('team__run-string_animated');
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+teamRunStringsObserver.observe(teamRunStrings);
+
+const runStringsObserver = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('run-strings_animated');
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+runStringsObserver.observe(runStrings);
+
+const roadmapsObserver = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('point-general_animated');
+      observer.unobserve(entry.target);
+      console.log(entry.target.classList)
+    }
+  })
+});
+
+roadmapPoints.forEach(function (point) {
+  return roadmapsObserver.observe(point);
+});
 
 const imageObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach(function (entri) {

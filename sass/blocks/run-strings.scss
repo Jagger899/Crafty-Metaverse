@@ -13,7 +13,7 @@
   @include media-breakpoint-down(xs) {
     margin-top: -245px;
   }
- 
+  
   &__top-box {
     background: rgba(255, 255, 255, 0.04);
     width: 120%;
@@ -65,11 +65,11 @@
 
   &__top-text-box{
     display: flex;
-    // width: 200%;
+    width: 200%;
     flex-wrap: nowrap;
     align-items: center;
     gap: 60px;
-    animation: top-running 5s infinite linear;
+    // animation: top-running 5s infinite linear;
   }
 
   @keyframes top-running {
@@ -79,8 +79,7 @@
     }
 
     100% {
-      transform: translateX(-100%);
-      // transform: translate3d(-100%);
+      transform: translateX(calc(-100% - 70px));
     }
   }
 
@@ -92,7 +91,6 @@
     line-height: 140%;
     letter-spacing: 2px;
     white-space: nowrap;
-    // animation: top-running 5s infinite linear;
     
      @include media-breakpoint-down(l) {
         font-size: 150px;
@@ -113,6 +111,18 @@
     @include media-breakpoint-down(xs) {
       font-size: 52px;
     }
+
+    // &_animated {
+    //   animation: top-running 10s infinite linear;
+    // }
+  }
+
+  &_animated .run-strings__top-text{
+    animation: top-running 10s infinite linear;
+  }
+
+  &_animated .run-strings__bottom-content {
+    animation: second-run 5s infinite linear;
   }
 
   &__bottom-box {
@@ -127,7 +137,7 @@
   &__bottom-svg {
     width: 46px;
     height: 46px;
-    transform: rotate(-9.09deg);
+    transform: rotate(0);
     
       @include media-breakpoint-down(xs) {
         width: 18px;
@@ -140,7 +150,7 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: 60px;
-    animation: second-run 5s infinite linear;
+    
   }
 
   &__bottom-text-first {
@@ -183,7 +193,7 @@
 
   @keyframes second-run {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(calc(-100% - 115px));
     }
     100% {
       transform: translateX(0%);
@@ -228,4 +238,8 @@
       font-size: 19px;
     }
   }
+}
+
+marquee {
+  display: flex;
 }

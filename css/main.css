@@ -1164,6 +1164,12 @@ main {
     align-self: self-end;
   }
 }
+.roadmap__point-first {
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: color-dodge;
+  border-radius: 50%;
+  position: absolute;
+}
 .roadmap__adv-list {
   display: flex;
   flex-direction: column;
@@ -1261,7 +1267,6 @@ main {
   mix-blend-mode: color-dodge;
   -webkit-filter: blur(6px);
   filter: blur(6px);
-  animation: pulsing 1000ms infinite linear;
 }
 @media (max-width: 576px) {
   .roadmap__point-box_first .roadmap__point-second {
@@ -1288,7 +1293,6 @@ main {
   mix-blend-mode: lighten;
   border: 1px solid rgba(255, 182, 255, 0.2);
   opacity: 0.6;
-  animation: pulsing 1000ms infinite linear;
 }
 @media (max-width: 576px) {
   .roadmap__point-box_first .roadmap__point-third {
@@ -1302,7 +1306,6 @@ main {
   z-index: -4;
   background: rgb(131, 44, 247);
   opacity: 0.6;
-  animation: pulsing 1000ms infinite linear;
   mix-blend-mode: color-dodge;
 }
 @media (max-width: 576px) {
@@ -1317,7 +1320,6 @@ main {
   z-index: -6;
   background: linear-gradient(90deg, rgba(74, 30, 161, 0.78), rgba(67, 41, 183, 0.77));
   opacity: 0.6;
-  animation: pulsing 1000ms linear infinite;
 }
 @media (max-width: 576px) {
   .roadmap__point-box_first .roadmap__point-sixth {
@@ -1452,7 +1454,6 @@ main {
   mix-blend-mode: color-dodge;
   -webkit-filter: blur(6px);
   filter: blur(6px);
-  animation: pulsing 1000ms infinite linear;
 }
 @media (max-width: 576px) {
   .roadmap__point-box_second .roadmap__point-second {
@@ -1467,7 +1468,6 @@ main {
   background: rgb(141, 49, 163);
   mix-blend-mode: lighten;
   opacity: 0.6;
-  animation: pulsing 1000ms infinite linear;
 }
 @media (max-width: 576px) {
   .roadmap__point-box_second .roadmap__point-third {
@@ -1481,7 +1481,6 @@ main {
   z-index: -4;
   opacity: 0.6;
   background: rgb(117, 44, 154);
-  animation: pulsing 1000ms infinite linear;
   mix-blend-mode: color-dodge;
 }
 @media (max-width: 576px) {
@@ -1496,7 +1495,6 @@ main {
   z-index: -6;
   opacity: 0.6;
   background-color: rgb(63, 20, 66);
-  animation: pulsing 1000ms infinite linear;
 }
 @media (max-width: 576px) {
   .roadmap__point-box_second .roadmap__point-sixth {
@@ -1590,7 +1588,6 @@ main {
   mix-blend-mode: color-dodge;
   -webkit-filter: blur(3px);
   filter: blur(3px);
-  animation: pulsing 1000ms infinite linear;
 }
 @media (max-width: 576px) {
   .roadmap__point-box_third .roadmap__point-second {
@@ -1605,7 +1602,6 @@ main {
   background: rgb(62, 238, 181);
   mix-blend-mode: lighten;
   opacity: 0.8;
-  animation: pulsing 1000ms infinite linear;
   border: 1px solid #0c7c9e;
 }
 @media (max-width: 576px) {
@@ -1621,7 +1617,6 @@ main {
   background: rgb(39, 147, 107);
   mix-blend-mode: color-dodge;
   opacity: 0.6;
-  animation: pulsing 1000ms infinite linear;
 }
 @media (max-width: 576px) {
   .roadmap__point-box_third .roadmap__point-fourth {
@@ -1634,7 +1629,6 @@ main {
   height: 134px;
   z-index: -6;
   background: rgb(18, 70, 48);
-  animation: pulsing 1000ms infinite linear;
 }
 @media (max-width: 576px) {
   .roadmap__point-box_third .roadmap__point-sixth {
@@ -1728,7 +1722,6 @@ main {
   height: 62px;
   z-index: -2;
   background: rgb(126, 236, 255);
-  animation: pulsing 1000ms infinite linear;
   mix-blend-mode: color-dodge;
 }
 @media (max-width: 576px) {
@@ -1743,7 +1736,6 @@ main {
   z-index: -3;
   background: rgb(30, 82, 159);
   mix-blend-mode: lighten;
-  animation: pulsing 1000ms infinite linear;
   opacity: 0.6;
 }
 @media (max-width: 576px) {
@@ -1759,7 +1751,6 @@ main {
   opacity: 0.6;
   background: rgb(22, 71, 129);
   mix-blend-mode: color-dodge;
-  animation: pulsing 1000ms infinite linear;
 }
 @media (max-width: 576px) {
   .roadmap__point-box_fourth .roadmap__point-fourth {
@@ -1772,7 +1763,6 @@ main {
   height: 134px;
   z-index: -6;
   background-color: rgb(15, 61, 87);
-  animation: pulsing 1000ms infinite linear;
   opacity: 0.6;
 }
 @media (max-width: 576px) {
@@ -1849,6 +1839,9 @@ main {
   mix-blend-mode: color-dodge;
   border-radius: 50%;
   position: absolute;
+}
+.point-general_animated {
+  animation: pulsing 1000ms infinite linear;
 }
 
 .brands {
@@ -2641,17 +2634,17 @@ main {
 }
 .run-strings__top-text-box {
   display: flex;
+  width: 200%;
   flex-wrap: nowrap;
   align-items: center;
   gap: 60px;
-  animation: top-running 5s infinite linear;
 }
 @keyframes top-running {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 70px));
   }
 }
 .run-strings__top-text {
@@ -2688,6 +2681,12 @@ main {
     font-size: 52px;
   }
 }
+.run-strings_animated .run-strings__top-text {
+  animation: top-running 10s infinite linear;
+}
+.run-strings_animated .run-strings__bottom-content {
+  animation: second-run 5s infinite linear;
+}
 .run-strings__bottom-box {
   background-color: #000;
   position: relative;
@@ -2699,7 +2698,7 @@ main {
 .run-strings__bottom-svg {
   width: 46px;
   height: 46px;
-  transform: rotate(-9.09deg);
+  transform: rotate(0);
 }
 @media (max-width: 576px) {
   .run-strings__bottom-svg {
@@ -2712,7 +2711,6 @@ main {
   flex-wrap: nowrap;
   align-items: center;
   gap: 60px;
-  animation: second-run 5s infinite linear;
 }
 .run-strings__bottom-text-first {
   font-family: HeliosExtC;
@@ -2756,7 +2754,7 @@ main {
 }
 @keyframes second-run {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 115px));
   }
   100% {
     transform: translateX(0%);
@@ -2803,6 +2801,10 @@ main {
   .run-strings__bottom-text-second {
     font-size: 19px;
   }
+}
+
+marquee {
+  display: flex;
 }
 
 .game {
@@ -3855,7 +3857,7 @@ main {
     background: linear-gradient(0deg, #7476ED 0%, #7476ED 100%);
     mix-blend-mode: color-dodge;
     -webkit-filter: blur(84px);
-    filter: blur(8px);
+    filter: blur(84px);
     z-index: -4;
   }
 }
@@ -4077,6 +4079,9 @@ main {
   position: relative;
   left: -20px;
 }
+.team__run-string_animated .team__run-string-text {
+  animation: bottom-run 5s infinite linear;
+}
 .team__run-string-text {
   display: flex;
   align-items: center;
@@ -4088,7 +4093,9 @@ main {
   line-height: 140%;
   letter-spacing: 0.72px;
   white-space: nowrap;
-  animation: top-running 5s infinite linear;
+}
+.team__run-string-text_animated {
+  animation: bottom-run 5s infinite linear;
 }
 .team__run-string-text_first {
   background: var(--2, linear-gradient(90deg, #21FCFF 0%, #FD40FF 100%));
@@ -4110,6 +4117,14 @@ main {
 @media (max-width: 576px) {
   .team__run-string-text {
     font-size: 33px;
+  }
+}
+@keyframes bottom-run {
+  0% {
+    transform: translateX(calc(-100% - 1300px));
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 .team .team__run-string-text svg {

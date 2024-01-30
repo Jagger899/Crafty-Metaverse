@@ -25,6 +25,8 @@ const teamRunStringsObserver = new IntersectionObserver(function (entries, obser
       observer.unobserve(entry.target);
     }
   });
+}, {
+  rootMargin:'200px 0px 0px 100px'
 });
 
 teamRunStringsObserver.observe(teamRunStrings);
@@ -48,6 +50,8 @@ const roadmapsObserver = new IntersectionObserver(function (entries, observer) {
       console.log(entry.target.classList)
     }
   })
+},{
+  rootMargin:'200px 0px 0px 200px'
 });
 
 roadmapPoints.forEach(function (point) {
@@ -61,6 +65,8 @@ const imageObserver = new IntersectionObserver(function (entries, observer) {
       observer.unobserve(entri.target);
     }
   })
+},{
+  rootMargin:'400px 0px 0px 400px'
 });
 
 document.querySelectorAll('img').forEach(function (img) {

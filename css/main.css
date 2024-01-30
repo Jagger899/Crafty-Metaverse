@@ -4464,6 +4464,7 @@ marquee {
 .social {
   padding: 140px 0 450px;
   position: relative;
+  overflow-y: hidden;
 }
 @media (max-width: 576px) {
   .social {

@@ -1,6 +1,7 @@
 .social {
   padding: 140px 0 450px;
   position: relative;
+  overflow-y: hidden;
 
   @include media-breakpoint-down(xs) {
     padding-top: 46px;

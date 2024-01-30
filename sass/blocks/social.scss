@@ -127,7 +127,7 @@
     height: 604px;
     border-radius: 604px;
     opacity: 0.6;
-    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    background: var(--1, linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%));
     -webkit-filter: blur(218px);
     filter: blur(218px);
   }

@@ -14,6 +14,18 @@ const accordeonButtons = document.querySelectorAll('.accordeon__button');
 const accordeonText = document.querySelectorAll('.accordeon__text-box');
 const accordeonButtonsSvg = document.querySelectorAll('.accordeon__button-svg');
 
+const imageObserver = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(function (entri) {
+    if (entri.isIntersecting) {
+      entri.target.src = entri.target.dataset.src;
+      observer.unobserve(entri.target);
+    }
+  })
+});
+
+document.querySelectorAll('img').forEach(function (img) {
+  return imageObserver.observe(img)
+})
 
 menuOpen.addEventListener('click', function () {
   mobileMenu.classList.toggle('header__mobile-menu_active');

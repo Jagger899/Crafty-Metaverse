@@ -1,6 +1,7 @@
 .team {
   padding: 135px 0 250px;
   position: relative;
+  overflow: hidden;
 
   @include media-breakpoint-down(l) {
     padding-bottom: 200px;
@@ -83,7 +84,7 @@
     height: 562px;
     transform: rotate(30deg);
     border-radius: 789px;
-    opacity: 0.5;
+    opacity: 0.2;
     background: linear-gradient(0deg, #7476ED 0%, #7476ED 100%);
     -webkit-filter: blur(218px);
     filter: blur(218px);
@@ -105,6 +106,20 @@
     }
   }
 
+    // /* Ellipse 241 */
+  
+    // position: absolute;
+    // width: 558.36px;
+    // height: 562.05px;
+    // left: -31.01px;
+    // top: 688.19px;
+  
+    // background: linear-gradient(0deg, #7476ED, #7476ED);
+    // mix-blend-mode: color-dodge;
+    // opacity: 0.5;
+    // filter: blur(218px);
+    // transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
+
   &__card-decor-second {
     width: 558px;
     height: 562px;
@@ -117,7 +132,7 @@
     -webkit-filter: blur(218px);
     filter: blur(218px);
     top: 0%;
-    left: 6%;
+    left: -6%;
 
     @include media-breakpoint-down(sm) {
       top: 15%;

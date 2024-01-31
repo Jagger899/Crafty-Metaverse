@@ -243,6 +243,10 @@
     margin: 0 auto;
     width: 176px;
     font-size: 17px;
+
+    &:before {
+      display: none;
+    }
   }
 
   &__content-lines {
@@ -257,7 +261,7 @@
 
   &__content-decor-left {
     position: absolute;
-    background: linear-gradient(180deg, rgba(58, 78, 255, 0.00) 0%, rgba(156, 58, 255, 0.14) 100%);
+    background: linear-gradient(180deg, rgba(222, 58, 255, 0.1) 0%, rgba(255, 58, 239, 0.24) 100%);
     width: 50%;
     height: 50%;
     top: 0;
@@ -269,7 +273,8 @@
 
   &__content-decor-right {
     position: absolute;
-    background: linear-gradient(180deg, rgba(58, 78, 255, 0.00) 0%, rgba(156, 58, 255, 0.14) 100%);
+    // background: linear-gradient(180deg, rgba(58, 78, 255, 0.00) 0%, rgba(156, 58, 255, 0.14) 100%);
+    background: linear-gradient(180deg, rgba(222, 58, 255, 0.1) 0%, rgba(255, 58, 239, 0.14) 100%);
     width: 50%;
     height: 60%;
     top: 0;

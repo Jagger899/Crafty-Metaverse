@@ -162,7 +162,11 @@
       font-weight: 700;
       line-height: 145%;
       width: 173px;
-      padding-bottom: 18px;
+
+      &:before {
+        display: none;
+      }
+      
 
       @include media-breakpoint-down(lg) {
         margin: 0 auto;

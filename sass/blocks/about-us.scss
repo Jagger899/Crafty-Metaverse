@@ -160,6 +160,10 @@
       top: -14px;
       left: -18px;
 
+      @include media-breakpoint-down(sm) {
+        left:-14px;
+      }
+
       @include media-breakpoint-down(xs) {
         left: -4px;
         background-image: url("../images/about-us/slider-circle-2.svg");
@@ -247,8 +251,10 @@
   &__lines {
     // display: none;
     position: absolute;
-    top: 20px;
+    height: 100%;
+    top: 0;
     left: 0;
+    object-fit: cover;
 
     @include media-breakpoint-down(sm) {
       top:44px;

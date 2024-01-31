@@ -157,11 +157,19 @@
       transform: translateY(120%);
       transition: transform 500ms linear;
       z-index: 4;
-      padding: 143px 20px 20px;
+      padding: 143px 20px 0;
 
       &_active {
         transform: translateY(0);
       }
+    }
+
+    @include on500 {
+      padding-top: 90px;
+    }
+
+    @include media-breakpoint-down(xxs) {
+      background-position: center top;
     }
   }
 

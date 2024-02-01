@@ -16,14 +16,19 @@ const accordeonButtonsSvg = document.querySelectorAll('.accordeon__button-svg');
 const roadmapPoints = document.querySelectorAll('.point-general');
 const runStrings = document.querySelector('.run-strings');
 const teamRunStrings = document.querySelector('.team__run-string');
-console.log(teamRunStrings)
+
+const socialLinks = document.querySelectorAll('.social__link');
+
+socialLinks.forEach((link) => {
+  link.addEventListener('click',(event) => {
+    event.preventDefault();
+  })
+})
 
 const teamRunStringsObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       entry.target.classList.add('team__run-string_animated');
-      // observer.unobserve(entry.target);
-      console.log(entry)
     } else {
       entry.target.classList.remove('team__run-string_animated');
     }
@@ -36,7 +41,6 @@ const runStringsObserver = new IntersectionObserver(function (entries, observer)
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       entry.target.classList.add('run-strings_animated');
-      // observer.unobserve(entry.target);
     } else {
       entry.target.classList.remove('run-strings_animated');
     }
@@ -49,7 +53,6 @@ const roadmapsObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
       entry.target.classList.add('point-general_animated');
-      // observer.unobserve(entry.target);
       console.log(entry.target.classList)
     } else {
       entry.target.classList.remove('point-general_animated');
@@ -62,21 +65,6 @@ const roadmapsObserver = new IntersectionObserver(function (entries, observer) {
 roadmapPoints.forEach(function (point) {
   return roadmapsObserver.observe(point);
 });
-
-// const imageObserver = new IntersectionObserver(function (entries, observer) {
-//   entries.forEach(function (entri) {
-//     if (entri.isIntersecting) {
-//       entri.target.src = entri.target.dataset.src;
-//       observer.unobserve(entri.target);
-//     }
-//   })
-// },{
-//   rootMargin:'400px 0px 0px 400px'
-// });
-
-// document.querySelectorAll('img').forEach(function (img) {
-//   return imageObserver.observe(img)
-// })
 
 menuOpen.addEventListener('click', function () {
   mobileMenu.classList.toggle('header__mobile-menu_active');
@@ -131,7 +119,7 @@ dropButton.forEach(function (button) {
 
   button.addEventListener('click', function () {
     console.log(button.childNodes)
-    if (window.innerWidth >= 1315 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
+    if (window.innerWidth >= 1400 && !currentElement.classList.contains('roadmap__dropdown-text_visible')) {
       currentElement.classList.add('roadmap__dropdown-text_visible');
       button.childNodes[1].classList.add('roadmap__dropdown-arrow_rotate');
     } else if (!currentElement.classList.contains('roadmap__dropdown-text_visible')) {
@@ -180,21 +168,67 @@ const swiper2 = new Swiper('.social__slider', {
       spaceBetween:50,
     },
 
-    480: {
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    450: {
+      slidesPerView: 2.2,
+      spaceBetween: 30,
+    },
+
+    500: {
       slidesPerView: 2.5,
       spaceBetween: 10,
+    },
+
+    550: {
+      slidesPerView:2.8,
     },
 
     600: {
       slidesPerView:2.8,
     },
 
+    650: {
+      slidesPerView:2.9,
+    },
+
     700: {
-      slidesPerView: 2.7,
+      slidesPerView: 3,
       spaceBetween:0,
     },
 
+    750: {
+      slidesPerView: 3.1,
+    },
+
+    768: {
+      slidesPerView: 2.6,
+    },
+
+    850: {
+      slidesPerView: 2.8,
+    },
+
+    900: {
+      slidesPerView:3.1,
+    },
+
+    950: {
+      slidesPerView: 3.3,
+    },
+
+    1050: {
+      slidesPerView: 3.4,
+    },
+
     1100: {
+      slidesPerView:3.8,
+    },
+
+    1180: {
       enabled: false,
       slidesPerView: 4,
     },

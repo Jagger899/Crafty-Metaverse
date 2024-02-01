@@ -63,14 +63,14 @@
   &__decor-first {
     width: 789px;
     height: 238px;
-    // background: linear-gradient(114deg, #4462FF 23.53%, #56FFEB 64.93%);
-    // -webkit-filter: blur(85px);
-    // filter: blur(85px);
+    background: linear-gradient(114deg, #4462FF 23.53%, #56FFEB 64.93%);
+    -webkit-filter: blur(85px);
+    filter: blur(85px);
     position: absolute;
     bottom: -145%;
     left:0%;
     z-index: -2;
-    // transform: rotate(-115deg);
+    transform: rotate(-115deg);
   }
 
   &__decor-second {

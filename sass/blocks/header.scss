@@ -164,8 +164,9 @@
       }
     }
 
-    @include on500 {
+    @include on600 {
       padding-top: 90px;
+      padding-bottom: 30px;
     }
 
     @include media-breakpoint-down(xxs) {

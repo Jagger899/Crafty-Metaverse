@@ -32,8 +32,8 @@ $breakpoints: (
   }
 }
 
-@mixin on500 {
-  @media(max-height: 500px) {
+@mixin on600 {
+  @media(max-height: 600px) {
     @content;
   }
 };

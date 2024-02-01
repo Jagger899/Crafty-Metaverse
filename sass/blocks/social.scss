@@ -102,7 +102,7 @@
     height: 705px;
     transform: rotate(-151deg);
     border-radius: 852px;
-    opacity: 0.33;
+    opacity: 0.4;
     background: linear-gradient(96deg, #00DBDE 25.39%, #FC00FF 84.84%);
     -webkit-filter: blur(218px);
     filter: blur(218px);
@@ -127,10 +127,12 @@
     width: 487px;
     height: 604px;
     border-radius: 604px;
-    opacity: 0.6;
+    opacity: 0.45;
     background: var(--1, linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%));
     -webkit-filter: blur(218px);
     filter: blur(218px);
+    transform: matrix(0.91, -0.41, -0.56, -0.83, 0, 0);
+
   }
 
   &__decor-discord-bl{
@@ -138,14 +140,16 @@
     height: 603px;
     border-radius: 604px;
     position: absolute;
-    right: 20%;
-    top: 0%;
-    opacity: 0.6;
+    right: 32%;
+    top: -11%;
+    opacity: 0.33;
     z-index: -4;
     background-color: red;
     background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     -webkit-filter: blur(218px);
     filter: blur(218px);
     z-index: -5;
+    transform: rotate(-175.96deg);
   }
+
 }
